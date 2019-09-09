@@ -61,6 +61,7 @@ body {
 .app__home {
   background-color: var(--bg);
   color: var(--text);
+  padding-top: 184px;
 }
 
 .container {
@@ -84,11 +85,33 @@ body {
   border-color: var(--green);
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .2s color, .2s background-color;
+}
+
+.header_scroll {
+  background-color: var(--text);
+  color: var(--dark);
+}
+
 .header__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 184px;
+  transition: .2s height;
+}
+
+.header__box_scroll {
+  height: 95px;
+}
+
+.header__box_scroll .header__logo span {
+  display: none;
 }
 
 .header__menu {
@@ -190,7 +213,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #BED0E9;
 }
 
 .footer__social {
