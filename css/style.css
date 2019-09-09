@@ -91,6 +91,7 @@ body {
   left: 0;
   width: 100%;
   transition: .2s color, .2s background-color;
+  z-index: 1000;
 }
 
 .header_scroll {
