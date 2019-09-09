@@ -1,0 +1,9 @@
+:root {
+  --bg: #203060;
+  --text: #BDCFE9;
+}
+
+.app__home {
+  background-color: var(--bg);
+  color: var(--text);
+}
