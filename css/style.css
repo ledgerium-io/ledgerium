@@ -135,6 +135,10 @@ body {
   margin-right: 5px;
 }
 
+.header__logo-img_dark {
+  display: none;
+}
+
 .home-top {
   text-align: center;
   margin-bottom: 120px;
