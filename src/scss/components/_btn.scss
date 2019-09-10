@@ -4,10 +4,27 @@
   width: 205px;
   border-radius: 8px;
   font-size: 1rem;
+
+  &_empty {
+    transition: .2s color, .2s background-color;
+
+    &:hover,
+    &:focus {
+      color: var(--bg);
+      background-color: var(--text);
+    }
+  }
   
   &_green {
     background-color: var(--green);
     color: #fff;
     border-color: var(--green);
+    transition: .2s background-color, .2s border-color;
+
+    &:hover,
+    &:focus {
+      background-color: #20D4B6;
+      border-color: #20D4B6;
+    }
   }
 }

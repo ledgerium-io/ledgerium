@@ -13,6 +13,11 @@
 
   a {
     color: var(--green);
+
+    &:hover,
+    &:focus {
+      color: var(--green-hover);
+    }
   }
 
   &__btn {
