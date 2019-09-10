@@ -65,7 +65,7 @@ function html() {
 function watcher() {
   watch('src/scss/**/*.scss', css);
   watch('src/js/*.js', javascript);
-  watch('src/views/**/*.pug', html);
+  watch('src/pug/**/*.pug', html);
   watch('src/img/**/*', img);
 };
 
