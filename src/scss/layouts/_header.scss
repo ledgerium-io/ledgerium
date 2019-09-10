@@ -1,26 +1,25 @@
 .header {
   position: fixed;
   top: 0;
+  padding-top: 56px;
   left: 0;
   width: 100%;
-  transition: .2s color, .2s background-color;
+  transition: .3s background-color, .3s padding-top;
   z-index: 1000;
 
   &_scroll {
     background-color: var(--text);
     color: var(--dark);
+    padding-top: 0;
   }
 
   &__box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 184px;
-    transition: .2s height;
+    height: 70px;
   
     &_scroll {
-      height: 70px;
-
       & .header__logo span {
         display: none;
       }
