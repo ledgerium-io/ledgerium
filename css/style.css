@@ -107,7 +107,7 @@ body {
 }
 
 .header__box_scroll {
-  height: 95px;
+  height: 70px;
 }
 
 .header__box_scroll .header__logo span {
@@ -118,13 +118,12 @@ body {
   list-style: none;
   padding: 0;
   display: flex;
-  margin-bottom: 12px;
   margin-right: 75px;
 }
 
 .header__item {
   display: block;
-  padding: 0 24px;
+  padding: 12px 24px;
 }
 
 .header__logo {
