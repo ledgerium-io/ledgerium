@@ -5,8 +5,30 @@ include modules/head.pug
   main
     include modules/top.pug
     .container.team__container
-      .founders
+      section.people
         h2.team-title The Founders
+        .people__grid
+          include modules/people-cards/cheah.pug
+          include modules/people-cards/electro.pug
+          include modules/people-cards/ray-wang.pug
+          include modules/people-cards/ashwath.pug
+          include modules/people-cards/ma.pug
+          include modules/people-cards/adam-wang.pug
+      section.people.team-players
+        h2.team-title The Team players
+        .people__grid
+          include modules/people-cards/huang.pug
+          include modules/people-cards/golash.pug
+          include modules/people-cards/kumar.pug
+          include modules/people-cards/slayo.pug
+          include modules/people-cards/rachel-li.pug
+          include modules/people-cards/ping.pug
+          include modules/people-cards/cole.pug
+          include modules/people-cards/huffman.pug
+          include modules/people-cards/lee.pug
+          include modules/people-cards/gulati.pug
+          include modules/people-cards/ifran.pug
+          include modules/people-cards/zac.pug
   include modules/footer.pug
   
 script(src='js/header.js')
