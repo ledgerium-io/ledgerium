@@ -1,4 +1,6 @@
 .app {
+  color: var(--gray);
+
   &__home {
     background-color: var(--bg);
     color: var(--text);
@@ -10,5 +12,5 @@
   max-width: 1724px;
   position: relative;
   margin: 0 auto;
-  padding: 0 64px; 
+  padding: 0 64px;
 }

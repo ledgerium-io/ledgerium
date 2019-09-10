@@ -6,6 +6,8 @@
 @import 'layouts/app',
         'layouts/header',
         'layouts/footer';
+
+@import 'pages/team';
       
 @import 'components/btn',
         'components/footer-social',
@@ -14,3 +16,6 @@
 @import 'components/home/home-top',
         'components/home/home-banner',
         'components/home/partners';
+
+@import 'components/team/title',
+        'components/team/founders';
