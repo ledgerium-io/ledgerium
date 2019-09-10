@@ -1,7 +1,8 @@
-.app__home {
-  background-color: var(--bg);
-  color: var(--text);
-  padding-top: 184px;
+.app {
+  &__home {
+    background-color: var(--bg);
+    color: var(--text);
+  }
 }
 
 .container {

@@ -1,0 +1,20 @@
+.top {
+  text-align: center;
+  margin-bottom: 120px;
+  background-color: var(--light);
+  padding-top: 184px;
+
+  &__title {
+    font-size: 50px;
+    max-width: 400px;
+    margin: 42px auto 23px;
+    font-weight: 400;
+    line-height: 1.44;
+  }
+
+  &__text {
+    max-width: 835px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+}
