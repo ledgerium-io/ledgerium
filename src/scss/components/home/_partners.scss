@@ -1,0 +1,12 @@
+.partners {
+  border-top: 2px solid var(--text);
+  padding-top: 110px;
+  padding-bottom: 134px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__item {
+    display: block;
+  }
+}

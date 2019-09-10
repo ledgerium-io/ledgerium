@@ -1,0 +1,23 @@
+.home-banner {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 111px;
+  color: var(--dark);
+  font-size: 30px;
+  line-height: 1.5;
+  background: #fff url(../img/banner-right.svg) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  font-weight: 700;
+  margin-bottom: 104px;
+
+  a {
+    color: var(--green);
+  }
+
+  &__btn {
+    margin-top: 36px;
+    padding: 15px 0;
+    width: 267px;
+  }
+}

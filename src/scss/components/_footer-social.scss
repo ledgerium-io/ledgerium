@@ -1,0 +1,29 @@
+.social {
+  &__item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 34px;
+    border-radius: 6px;
+  }
+
+  &__twitter {
+    background-image: url(../img/icons/twitter.svg);
+  }
+
+  &__medium {
+    background-image: url(../img/icons/medium.svg);
+    background-color: var(--text);
+  }
+
+  &__telegram {
+    background-image: url(../img/icons/telegram.svg);
+    background-color: var(--text);
+  }
+
+  &__github {
+    background-image: url(../img/icons/github.svg);
+  }
+}

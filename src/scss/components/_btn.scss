@@ -1,0 +1,13 @@
+.btn {
+  border: 1px solid var(--text);
+  padding: 14px 0;
+  width: 205px;
+  border-radius: 8px;
+  font-size: 1rem;
+  
+  &_green {
+    background-color: var(--green);
+    color: #fff;
+    border-color: var(--green);
+  }
+}

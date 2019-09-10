@@ -1,0 +1,19 @@
+.footer {
+  border-top: 1px solid var(--text);
+
+  &__box {
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 20px;
+    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    list-style: none;
+    display: flex;
+    margin-right: 108px;
+  }
+}
