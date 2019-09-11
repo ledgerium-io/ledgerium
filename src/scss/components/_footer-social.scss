@@ -2,13 +2,12 @@
   &__item {
     width: 32px;
     height: 32px;
-    display: flex;
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 34px;
-    border-radius: 6px;
     opacity: .6;
     transition: .2s opacity;
+    display: block;
 
     &:hover,
     &:focus {
@@ -22,12 +21,10 @@
 
   &__medium {
     background-image: url(../img/icons/medium.svg);
-    background-color: #bec9d8;
   }
 
   &__telegram {
     background-image: url(../img/icons/telegram.svg);
-    background-color: #bec9d8;
   }
 
   &__github {
