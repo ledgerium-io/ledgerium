@@ -4,11 +4,12 @@
   padding-top: 56px;
   left: 0;
   width: 100%;
-  transition: .3s background-color, .3s padding-top;
+  transition: .3s background-color, .3s padding-top, .2s box-shadow;
   z-index: 1000;
 
   &_scroll {
-    background-color: var(--text);
+    background-color: #fff;
+    box-shadow: var(--shadow);
     color: var(--dark);
     padding-top: 0;
   }

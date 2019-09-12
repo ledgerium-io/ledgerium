@@ -31,7 +31,7 @@
     width: 120px;
     height: 120px;
     transform: translate(-34%,-26%);
-    box-shadow: 0 7.1px 40px rgba(190, 208, 233, .3);
+    box-shadow: var(--shadow);
   }
 
   &__img {
