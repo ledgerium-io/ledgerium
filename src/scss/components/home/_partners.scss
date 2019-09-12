@@ -8,5 +8,30 @@
   
   &__item {
     display: block;
+    
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .partners {
+    display: block;
+    padding-top: 62px;
+    padding-bottom: 0;
+
+    &__item {
+      text-align: center;
+      margin-bottom: 30px;
+
+      img {
+        max-width: 136px;
+      }
+      
+      &:not(:last-child) {
+        margin-right: auto;
+      }
+    }
   }
 }

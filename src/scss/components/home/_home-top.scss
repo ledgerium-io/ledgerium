@@ -17,3 +17,21 @@
     margin-right: 46px;
   }
 }
+
+@media (max-width: 767px) {
+  .home-top {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__become-btn {
+      display: block;
+      margin: 20px auto;
+    }
+
+    &__img {
+      padding: 0 50px;
+      margin-top: 70px;
+    }
+  }
+}

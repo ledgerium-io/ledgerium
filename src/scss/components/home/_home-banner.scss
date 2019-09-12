@@ -26,3 +26,37 @@
     width: 267px;
   }
 }
+
+@media (max-width: 1175px) {
+  .home-banner {
+    br {
+      display: none;
+    }
+  
+    p {
+      max-width: 70%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home-banner {
+    font-size: 18px;
+    padding: 46px 26px;
+    background-size: 88px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-banner {
+    margin: 0 -26px;
+    border-radius: 0;
+
+    &__btn {
+      width: 200px;
+      padding: 10px 0;
+      margin-top: 28px;
+    }
+  }
+}

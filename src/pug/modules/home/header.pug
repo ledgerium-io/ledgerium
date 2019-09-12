@@ -1,10 +1,11 @@
-header.header
+header.header(:class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight }")
   .container.header__box
     a.header__logo(href='/')
       img.header__logo-img(src='img/logotype.svg' alt='Ledgerium logotype')
       img.header__logo-img.header__logo-img_dark(src='img/logotype-dark.svg' alt='Ledgerium logotype')
       span ledgerium.io
-    nav
+    button.header__burger(@click="toggleMenu", :class="{ 'header__burger_close': isShowMenu }")
+    nav.header__nav(:class="{ 'header__nav_show': isShowMenu }")
       ul.header__menu
         li
           a.header__item(href='/') Home

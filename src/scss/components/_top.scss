@@ -15,7 +15,20 @@
 
   &__text {
     max-width: 835px;
+    padding: 0 26px;
     margin: 0 auto;
     margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
   }
 }
