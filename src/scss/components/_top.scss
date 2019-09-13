@@ -7,10 +7,10 @@
 
   &__title {
     font-size: 50px;
-    max-width: 400px;
     margin: 42px auto 23px;
     font-weight: 400;
     line-height: 1.44;
+    padding: 0 26px;
   }
 
   &__text {
@@ -18,13 +18,17 @@
     padding: 0 26px;
     margin: 0 auto;
     margin-bottom: 56px;
+
+    a {
+      color: var(--green);
+    }
   }
 }
 
 @media (max-width: 767px) {
   .top {
     padding-top: 70px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
 
     &__title {
       font-size: 28px;

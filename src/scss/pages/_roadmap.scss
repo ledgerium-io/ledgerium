@@ -1,0 +1,24 @@
+.roadmap {
+  &__top-btns {
+    button {
+      &:first-child {
+        margin-right: 72px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .roadmap {
+    &__top-btns {
+      button {
+        display: block;
+        margin: 0 auto 28px auto;
+
+        &:first-child {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
