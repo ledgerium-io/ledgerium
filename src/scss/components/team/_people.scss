@@ -81,8 +81,11 @@
 
 @media (max-width: 991px) {
   .people {
+    margin-top: 20px;
+
     &__grid {
       grid-row-gap: 40px;
+      margin-top: 46px;
     }
 
     &__item {

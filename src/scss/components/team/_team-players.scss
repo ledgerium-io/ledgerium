@@ -6,3 +6,9 @@
     min-height: 257px;
   }
 }
+
+@media (max-width: 767px) {
+  .team-players {
+    margin: 45px 0;
+  }
+}

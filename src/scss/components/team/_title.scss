@@ -5,3 +5,9 @@
   border-bottom: 1px solid #CEDDF2;
   margin-bottom: 38px;
 }
+
+@media (max-width: 991px) {
+  .team-title {
+    font-size: 12px;
+  }
+}
