@@ -34,7 +34,7 @@
       margin-top: 152px;
 
       &::before {
-        left: -147.5px;
+        left: -17.5px;
       }
     }
 
@@ -42,7 +42,7 @@
       margin-bottom: 152px;
 
       &::before {
-        right: -147.5px;
+        right: -17.5px;
       }
     }
   }
@@ -73,6 +73,7 @@
   .the-way {
     &__box {
       display: flex;
+      flex-wrap: wrap;
 
       &::before {
         content: '';
@@ -87,21 +88,10 @@
       }
     }
 
-    &__side {
+    &__item {
       width: 50%;
       flex-shrink: 0;
-  
-      &_right {
-        padding-left: 130px;
-      }
-  
-      &_left {
-        text-align: right;
-        padding-right: 130px;
-      }
-    }
 
-    &__item {
       &::before {
         content: '';
         position: absolute;
@@ -112,6 +102,15 @@
         top: 72.5px;
         border-radius: 100%;
         box-shadow: var(--shadow);
+      }
+  
+      &_right {
+        padding-left: 130px;
+      }
+  
+      &_left {
+        text-align: right;
+        padding-right: 130px;
       }
     }
 
@@ -137,16 +136,6 @@
 
 @media (max-width: 991px) {
   .the-way {
-    &__side {
-      &_right {
-        padding-left: 80px;
-      }
-      
-      &_left {
-        padding-right: 80px;
-      }
-    }
-
     &__item {
       p {
         font-size: 14px;
@@ -154,18 +143,6 @@
 
       h3 {
         font-size: 20px;
-      }
-
-      &_right {
-        &::before {
-          left: -97.5px;
-        }
-      }
-
-      &_left {
-        &::before {
-          right: -97.5px;
-        }
       }
     }
   }
@@ -182,10 +159,6 @@
     }
 
     &__box {
-      padding-bottom: 0;
-    }
-
-    &__side {
       padding: 0 42px;
     }
 
