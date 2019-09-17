@@ -12,9 +12,9 @@
     for (let i = 0; (i < links.length - 1); i++) {
       let nextDivOffset = document.querySelector('.the-way__box').clientHeight;
       if (links[i + 1].hash) {
-        nextDivOffset = document.querySelector(links[i + 1].hash).offsetTop;
+        nextDivOffset = document.querySelector(links[i + 1].hash).offsetTop + 150;
       }
-      const divOffset = document.querySelector(links[i].hash).offsetTop;
+      const divOffset = document.querySelector(links[i].hash).offsetTop + 150;
 
       if (window.pageYOffset > divOffset && window.pageYOffset < nextDivOffset) {
         classHandle(links[i]);
