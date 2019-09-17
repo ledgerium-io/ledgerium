@@ -1,6 +1,18 @@
 .xgl-way {
   margin-top: 400px;
 
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__title-icon {
+    box-shadow: var(--shadow);
+    border-radius: 100%;
+    margin: 0 32px;
+  }
+
   &__item {
     width: 100%;
     display: flex;
@@ -8,7 +20,7 @@
     padding-top: 130px;
 
     &::before {
-      top: 200px;
+      top: 226px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -76,6 +88,10 @@
         padding-right: 80px;
         order: -1;
         text-align: right;
+
+        .xgl-way__title {
+          justify-content: flex-end;
+        }
       }
     }
   }
