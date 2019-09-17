@@ -34,11 +34,6 @@
     });
   }
 
-  window.onscroll = () => {
-    currentLinkHandle();
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    currentLinkHandle();
-  });
+  window.addEventListener('scroll', currentLinkHandle);
+  document.addEventListener('DOMContentLoaded', currentLinkHandle);
 }
