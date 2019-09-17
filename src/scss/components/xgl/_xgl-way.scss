@@ -39,6 +39,19 @@
   &__article {
     margin-top: 70px;
   }
+
+  &__btns {
+    display: flex;
+    margin-top: 50px;
+
+    &_left {
+      justify-content: flex-end;
+    }
+
+    button:first-child {
+      margin-right: 46px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -150,6 +163,16 @@
 
     &__article {
       margin-top: 0;
+    }
+
+    &__btns {
+      display: block;
+      margin-top: 20px;
+  
+      button:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   }
 }
