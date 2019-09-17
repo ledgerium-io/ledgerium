@@ -47,7 +47,7 @@
       
       const id = e.target.hash;
       const div = document.querySelector(id);
-      div.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      div.scrollIntoView({ behavior: 'smooth' });
     });
   }
 
@@ -65,7 +65,7 @@
       currentLinkHandle(box);
     }
   });
-  
+
   document.addEventListener('DOMContentLoaded', () => {
     if (width > 767) {
       currentLinkHandle();
