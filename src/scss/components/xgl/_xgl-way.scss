@@ -5,9 +5,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     &::before {
-      top: 70px;
+      top: 200px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -26,9 +27,11 @@
 
 @media (min-width: 1199px) {
   .xgl-way {
-    &__img {
-      margin-bottom: 200px;
+    &__item {
+      padding-top: 130px;
+    }
 
+    &__img {
       &_right {
         padding-left: 130px;
       }
@@ -53,7 +56,6 @@
 @media (min-width: 768px) {
   .xgl-way {
     &__img {
-      margin-bottom: 70px;
       width: 50%;
 
       &_right {
@@ -68,7 +70,6 @@
     }
     
     &__article {
-      margin-bottom: 70px;
       width: 50%;
 
       &_right {

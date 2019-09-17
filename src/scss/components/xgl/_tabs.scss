@@ -21,6 +21,10 @@
     &_active {
       color: var(--green);
       border-color: var(--green);
+
+      &:visited {
+        color: var(--green);
+      }
     }
   }
 }
