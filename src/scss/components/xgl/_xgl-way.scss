@@ -76,6 +76,10 @@
         margin-left: auto;
       }
     }
+
+    &__mobile-title {
+      display: none;
+    }
     
     &__article {
       width: 50%;
@@ -102,6 +106,31 @@
     padding: 0;
     margin-top: 0;
 
+    &__title {
+      justify-content: center;
+      margin-bottom: 16px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border: .5px solid #CEDDF2;
+        top: 50%;
+        left: -60px;
+        width: 100vw;
+        height: 1px;
+        z-index: -2;
+      }
+
+      h3 {
+        display: none;
+      }
+    }
+
+    &__title-icon {
+      width: 58px;
+    }
+
     &__box {
       display: flex;
       overflow-x: auto;
@@ -112,7 +141,11 @@
       display: block;
       width:  100vw;
       flex-shrink: 0;
-      padding: 100px 60px 0;
+      padding: 120px 60px 0;
+    }
+
+    &__article {
+      margin-top: 0;
     }
   }
 }
