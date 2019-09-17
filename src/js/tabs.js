@@ -8,18 +8,35 @@
     link.classList.add('tabs__item_active');
   }
 
-  const currentLinkHandle = () => {
-    for (let i = 0; (i < links.length - 1); i++) {
-      let nextDivOffset = document.querySelector('.the-way__box').clientHeight;
-      if (links[i + 1].hash) {
-        nextDivOffset = document.querySelector(links[i + 1].hash).offsetTop + 150;
-      }
-      const divOffset = document.querySelector(links[i].hash).offsetTop + 150;
+  const currentLinkHandle = (box) => {
+      for (let i = 0; (i < links.length - 1); i++) {
+        let nextDivOffset = document.querySelector('.the-way__box').clientHeight;
+        if (box) {
+          nextDivOffset = box.scrollWidth;
+        }
 
-      if (window.pageYOffset > divOffset && window.pageYOffset < nextDivOffset) {
-        classHandle(links[i]);
+        if (links[i + 1].hash) {
+          nextDivOffset = document.querySelector(links[i + 1].hash).offsetTop + 150;
+
+          if (box) {
+            nextDivOffset = document.querySelector(links[i + 1].hash).offsetLeft - 60;
+          }
+        }
+
+        let divOffset = document.querySelector(links[i].hash).offsetTop + 150;
+
+        if (box) {
+          divOffset = document.querySelector(links[i].hash).offsetLeft - 60;
+        }
+
+        if (box) {
+          if (box.scrollLeft > divOffset && box.scrollLeft < nextDivOffset) {
+            classHandle(links[i]);
+          }
+        } else if (window.pageYOffset > divOffset && window.pageYOffset < nextDivOffset) {
+          classHandle(links[i]);
+        }
       }
-    }
   }
 
   for (let i = 0; i < (links.length - 1); i++) {
@@ -34,6 +51,26 @@
     });
   }
 
-  window.addEventListener('scroll', currentLinkHandle);
-  document.addEventListener('DOMContentLoaded', currentLinkHandle);
+  const box = document.querySelector('.the-way__box');
+  const width = document.body.clientWidth;
+
+  window.addEventListener('scroll', () => {
+    if (width > 767) {
+      currentLinkHandle();
+    }
+  });
+
+  box.addEventListener('scroll', () => {
+    if (width < 768) {
+      currentLinkHandle(box);
+    }
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    if (width > 767) {
+      currentLinkHandle();
+    } else {
+      currentLinkHandle(box);
+    }
+  });
 }

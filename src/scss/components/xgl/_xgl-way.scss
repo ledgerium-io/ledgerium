@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    padding-top: 130px;
 
     &::before {
       top: 200px;
@@ -27,10 +27,6 @@
 
 @media (min-width: 1199px) {
   .xgl-way {
-    &__item {
-      padding-top: 130px;
-    }
-
     &__img {
       &_right {
         padding-left: 130px;
@@ -87,8 +83,20 @@
 
 @media (max-width: 767px) {
   .xgl-way {
+    margin-top: 0;
+    padding: 0;
+
+    &__box {
+      display: flex;
+      overflow-x: auto;
+      padding: 0;
+    }
+
     &__item {
       display: block;
+      width:  100vw;
+      flex-shrink: 0;
+      padding: 0 60px;
     }
   }
 }
