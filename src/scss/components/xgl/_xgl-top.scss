@@ -1,3 +1,10 @@
 .xgl-top {
   padding-bottom: 0;
+  padding-top: 100px;
+  width: 100%;
+  transition: .2s padding-top;
+
+  &_scroll {
+    padding-top: 20px;
+  }
 }

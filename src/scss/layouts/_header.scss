@@ -58,6 +58,10 @@
     background-size: contain;
     padding: 0;
   }
+
+  &_xgl {
+    background-color: var(--light);
+  }
 }
 
 @media (max-width: 1199px) {

@@ -1,0 +1,22 @@
+header.header.header_xgl(:class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight, 'header_scroll': isScroll }")
+  .container.header__box(:class="{ 'header__box_scroll': isScroll }")
+    a.header__logo(href='/')
+      img.header__logo-img(src='img/logotype-dark.svg' alt='Ledgerium logotype', :style="{ 'display: none': isScroll }")
+      img.header__logo-img.header__logo-img_dark(src='img/logotype.svg' alt='Ledgerium logotype', :style="{ 'display: none': !isScroll }")
+      span ledgerium.io
+    button.header__burger(@click="toggleMenu", :class="{ 'header__burger_close': isShowMenu }")
+    nav.header__nav(:class="{ 'header__nav_show': isShowMenu }")
+      ul.header__menu
+        li
+          a.header__item(href='/') Home
+        li
+          a.header__item(href='team.html') Team
+        li
+          a.header__item(href='roadmap.html') Roadmap
+        li
+          a.header__item(href='xgl.html') xlg Token
+        li
+          a.header__item(href='docs.html') Docs
+        li
+          a.header__item(href='block-ledger.html') Block Ledger
+  include top.pug
