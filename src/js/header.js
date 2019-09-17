@@ -25,5 +25,6 @@ var headerContainer = new Vue({
     window.onscroll = () => {
       this.headerHandle();
     }
+    this.headerHandle();
   }
 })
