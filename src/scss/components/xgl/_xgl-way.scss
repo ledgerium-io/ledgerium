@@ -4,7 +4,11 @@
   &__title {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 24px;
+    }
   }
 
   &__title-icon {
@@ -34,30 +38,6 @@
 
   &__article {
     margin-top: 70px;
-  }
-}
-
-@media (min-width: 1199px) {
-  .xgl-way {
-    &__img {
-      &_right {
-        padding-left: 130px;
-      }
-
-      &_left {
-        padding-right: 130px;
-      }
-    }
-    
-    &__article {
-      &_right {
-        padding-left: 130px;
-      }
-
-      &_left {
-        padding-right: 130px;
-      }
-    }
   }
 }
 
@@ -96,6 +76,30 @@
         .xgl-way__title {
           justify-content: flex-end;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1199px) {
+  .xgl-way {
+    &__img {
+      &_right {
+        padding-left: 174px;
+      }
+
+      &_left {
+        padding-right: 174px;
+      }
+    }
+    
+    &__article {
+      &_right {
+        padding-left: 174px;
+      }
+
+      &_left {
+        padding-right: 174px;
       }
     }
   }
