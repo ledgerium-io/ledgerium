@@ -1,0 +1,10 @@
+.container
+  .pricing
+    .pricing__top
+      .pricing__side
+        span.pricing__period {{ prices[current].period }}
+        img(src="img/icons/badge.svg", alt="")
+        a.pricing__link(href="https://testnet.ledgerium.net:3000") https://testnet.ledgerium.net:3000
+      span.pricing__side.pricing__title {{ prices[current].title }}
+    include range.pug
+    include plans.pug
