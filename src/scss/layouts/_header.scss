@@ -58,6 +58,10 @@
     background-size: contain;
     padding: 0;
   }
+
+  &_xgl {
+    background-color: var(--light);
+  }
 }
 
 @media (max-width: 1199px) {
@@ -70,8 +74,9 @@
 
 @media (max-width: 1070px) {
   .header {
-    height: 58px;
+    height: 76px;
     overflow: hidden;
+    padding-top: 26px;
 
     &_height-full {
       height: 322px;
@@ -124,7 +129,15 @@
 
 @media (max-width: 991px) {
   .header {
-    padding-top: 26px;
+    height: 58px;
+
+    &_xgl {
+      overflow: initial;
+    }
+
+    &_height-full {
+      height: 322px;
+    }
 
     &_scroll {
       padding-top: 0;
