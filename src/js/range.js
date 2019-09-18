@@ -25,4 +25,21 @@ var range = new Vue({
       }
     ]
   },
+  methods: {
+    sliderMove(e) {
+      const circles = document.querySelectorAll('.range__span');
+      for (let i = 0; i < circles.length; i++) {
+        if (e.clientX > (circles[i].offsetLeft - 70)) {
+          this.current = i;
+        }
+      }
+    },
+    sliderHandle() {
+      document.addEventListener('mousemove', this.sliderMove);
+      document.addEventListener('mouseup', this.sliderLeave);
+    },
+    sliderLeave() {
+      document.removeEventListener('mousemove', this.sliderMove);
+    }
+  }
 });

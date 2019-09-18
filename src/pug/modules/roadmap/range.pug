@@ -14,5 +14,5 @@
   label
     input.range__input(type="radio", name="range", v-model="current", value="4")
     span.range__span.range__span_last
-  span.range__slider(:style="{ 'left': 25 * current + '%' }")
+  span.range__slider(:style="{ 'left': 25 * current + '%' }", @mousedown="sliderHandle")
   span.range__progress(:style="{ 'width': 25 * current + '%' }")
