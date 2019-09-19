@@ -14,6 +14,7 @@ include modules/head.pug
           include modules/people-cards/ashwath.pug
           include modules/people-cards/ma.pug
           include modules/people-cards/adam-wang.pug
+        button.people__show(onclick="showMore(event)")
       section.people.team-players
         h2.team-title The Team players
         .people__grid
@@ -29,7 +30,9 @@ include modules/head.pug
           include modules/people-cards/gulati.pug
           include modules/people-cards/ifran.pug
           include modules/people-cards/zac.pug
+        button.people__show(onclick="showMore(event)")
   include modules/footer.pug
   
 script(src='https://cdn.jsdelivr.net/npm/vue')
 script(src='js/header.js')
+script(src="js/people.js")
