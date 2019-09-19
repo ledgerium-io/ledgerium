@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ledgerium home page</title>
+</head>
+<div class="app">
+  <header class="header" :class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight, 'header_scroll': isScroll }">
+    <div class="container header__box" :class="{ 'header__box_scroll': isScroll }"><a class="header__logo" href="/"><img class="header__logo-img" src="img/logotype.svg" alt="Ledgerium logotype" :style="{ 'display: none': isScroll }"><img class="header__logo-img header__logo-img_dark" src="img/logotype-dark.svg" alt="Ledgerium logotype" :style="{ 'display: none': !isScroll }"><span>ledgerium.io</span></a>
+      <button class="header__burger" @click="toggleMenu" :class="{ 'header__burger_close': isShowMenu }"></button>
+      <nav class="header__nav" :class="{ 'header__nav_show': isShowMenu }">
+        <ul class="header__menu">
+          <li><a class="header__item" href="/">Home</a></li>
+          <li><a class="header__item" href="team.html">Team</a></li>
+          <li><a class="header__item" href="roadmap.html">Roadmap</a></li>
+          <li><a class="header__item" href="xgl.html">xlg Token</a></li>
+          <li><a class="header__item" href="docs.html">Docs</a></li>
+          <li><a class="header__item" href="block-ledger.html">Block Ledger</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="top">
+      <h1 class="top__title">our dev team</h1>
+      <p class="top__text">We only hire the very best. Check out the team working on the ledgerium<br>blockchain and where they had worked before.</p>
+    </div>
+    <div class="container team__container">
+      <section class="people">
+        <h2 class="team-title">The Founders</h2>
+        <div class="people__grid">
+          <div class="people__item">
+            <div class="people__photo"><img src="img/team/photo.jpg" alt="Ivan Cheah photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Ivan Cheah</h3><span class="people__position">Co-founder &amp; CEO</span>
+            </div>
+            <p class="people__text">Ivan is a business executive with over 15 years of experience and a background in marketing and finance. He has held senior roles in the telecommunications, strategy consulting and automotive industry. Prior to marketing and finance, he worked as an engineer in the automotive industry, with roles in Australia, Korea and Germany. He also holds an MBA and a Bachelor of Aerospace Engineering.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="img/team/photo.jpg" alt="Electo photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Electo</h3><span class="people__position">Founder &amp; CTO</span>
+            </div>
+            <p class="people__text">Faisal aka “electo” is also very active in trading communities and provides a lot of technical feedback and education around bitcoin and trading in general. Faisal has worked with many of the top 100 fortune companies creating and implementing prediction based models based on both machine learning (AI) and trend analysis.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Ray Wang photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Ray Wang</h3><span class="people__position">Founder/CFO</span>
+            </div>
+            <p class="people__text">Ray has been a professional accountant for more than 10 years, and has experiences in both commercial and public accounting industries including working in financial compliance and internal control, budgeting, forecasting areas in Top 500 companies for many years and wide range of experience in many business and taxation accounting firms. Ray also has memberships in many business associations and sports clubs.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Ashwath photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Ashwath</h3><span class="people__position">Founder/Engineering VP</span>
+            </div>
+            <p class="people__text">A software architect, cloud enthusiast and a polyglot with experience in software engineering and abundant passion for building great software. He has worked as a solutions consultant at PWC, led the architecture for Nvidia games and led in various positions in Cisco, Intel &amp; Philips.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Kellson Ma photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Kellson Ma</h3><span class="people__position">Co-founder/CIO</span>
+            </div>
+            <p class="people__text">Co-Founder of ChinaDsl.net – One of the largest Chinese broadband support community. Kellson has over 12 years of experiences in software development for education, multinational Telco &amp; Energy Corps.  Prior to us, he was working at one of the top 2 ISPs in Australia. His expertise is working with payment processers and building solutions that our compliant with industry standards.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Adam Wang  photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Adam Wang </h3><span class="people__position">Founder</span>
+            </div>
+            <p class="people__text">Chartered accountant of Australia and New Zealand; Adam started as an accountant, gathering 14 years of experience in the financial industry, super funds, F&amp;B, and software development. Adam previously held a management role in a self-managed super fund (SMSF), and has managed over 800 million AUD in super fund assets at top-tier companies. </p>
+          </div>
+        </div>
+      </section>
+      <section class="people team-players">
+        <h2 class="team-title">The Team players</h2>
+        <div class="people__grid">
+          <div class="people__item">
+            <div class="people__photo"><img src="img/team/photo-1.jpg" alt="Leo Huang  photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Leo Huang </h3><span class="people__position">Advisor</span>
+            </div>
+            <p class="people__text">Managing partner of INP group. As a leading principal in his firm, Leo has extensive knowledge and experience in various industries, including cryptocurrency exchanges and large international corporations.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Rahul Golash photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Rahul Golash</h3><span class="people__position">VP/Emerging Technologies</span>
+            </div>
+            <p class="people__text">Holds three patents. Worked for Siemens, Broadridge financial amongst other companies prior to joining ledgerium. Rahul leads the blockchain side and the team that works on it around the world.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Santhosh Kumar  photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Santhosh Kumar </h3><span class="people__position">Engineering Lead &amp; Architect</span>
+            </div>
+            <p class="people__text">Prior to joining ledgerium Santhosh was the front-end architect at Nvidia and one of the power houses behind the GeForce experience. He is proficient in Binary, C++, JavaScript, Python, Java and Klingon. </p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Steve Slayo photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Steve Slayo</h3><span class="people__position">Senior Software Engineer</span>
+            </div>
+            <p class="people__text">Steve switched from pharmacy to coding. He is now a core part of our team. He really hates censorship, and has scars to show for it. He also runs a cryptostats website which sends out really cool trade signals.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Rachel Li photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Rachel Li</h3><span class="people__position">Head of Design</span>
+            </div>
+            <p class="people__text">Rachel is a T-shaped designer digging deep in UI/UX design and leads our design team. She has experience in designing public safety related digital projects for Motorola Solutions and The Queensland Police.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Ping photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Ping</h3><span class="people__position">UI/UX Designer</span>
+            </div>
+            <p class="people__text">Ping takes stick sketches and half baked ideas from the team, and turns them into magical user experiences which are highly usable and look amazing.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Tim Cole photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Tim Cole</h3><span class="people__position">Senior Web Designer</span>
+            </div>
+            <p class="people__text">Tim has worked in the online media industry for over 5 years, designing and building websites for small to medium size businesses. He brings skills in design and a passion for the user experience.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Konstantine Huffman photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Konstantine Huffman</h3><span class="people__position">Marketing Specialist</span>
+            </div>
+            <p class="people__text">Konsta is currently studying Commerce at the University of Melbourne. He comes to Block Ledger with 2 years experience, specializing in Social Media and Content Management.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Suet Er Lee photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Suet Er Lee</h3><span class="people__position">Junior Front-end Developer</span>
+            </div>
+            <p class="people__text">Suet Er is a fresh-grad from The University of Melbourne. Her passion for IT inspire her to embark into the world of IT. Since then, she joined CoderAcademy and became a full-stack developer, working on real-life applications.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Seep Gulati photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Seep Gulati</h3><span class="people__position">Junior Full Stack Developer</span>
+            </div>
+            <p class="people__text">Seep is a full-stack developer in training. She enjoys creating simple and intuitive applications. After several years of working as a public relations professional, she kick-started her software development journey.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Ifran photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Ifran</h3><span class="people__position">Full Stack Developer</span>
+            </div>
+            <p class="people__text">Started his code life working on the Nero suite in C/C++. Ifran switched languages more than jobs in the last few years and can almost code anything you throw at him. Churns out code at rapid pace while making it look easy.</p>
+          </div>
+          <div class="people__item">
+            <div class="people__photo"><img src="" alt="Zac photo"></div>
+            <div class="people__short">
+              <h3 class="people__name">Zac</h3><span class="people__position">Full Stack Developer</span>
+            </div>
+            <p class="people__text">Worked for National Instruments, Stratasoft and currently contracts for ledgerium. He codes in C/C++ and has lots of low asic level programming experience behind him. Currently working in Golang on ledgerium core.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__copyright">&copy; Copyright 2019 Blockledger | <a href="#">Terms of Service</a> | <a href="#">Privacy &amp; Security</a></div>
+      <nav>
+        <ul class="footer__social social">
+          <li><a class="social__item social__twitter" href="#"></a></li>
+          <li><a class="social__item social__medium" href="#"></a></li>
+          <li><a class="social__item social__github" href="#"></a></li>
+          <li><a class="social__item social__telegram" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/header.js"></script>
