@@ -1,18 +1,18 @@
 .range
-  label
+  label.range__label
     input.range__input(type="radio", name="range", v-model="current", value="0")
     span.range__span.range__span_first
-  label
+  label.range__label
     input.range__input(type="radio", name="range", v-model="current", value="1")
     span.range__span
-  label
+  label.range__label
     input.range__input(type="radio", name="range", v-model="current", value="2")
     span.range__span
-  label
+  label.range__label
     input.range__input(type="radio", name="range", v-model="current", value="3")
     span.range__span
-  label
+  label.range__label
     input.range__input(type="radio", name="range", v-model="current", value="4")
     span.range__span.range__span_last
-  span.range__slider(:style="{ 'left': 25 * current + '%' }", @mousedown="sliderHandle")
-  span.range__progress(:style="{ 'width': 25 * current + '%' }")
+  span.range__slider(:style="{ 'left': progress }", @mousedown="sliderHandle")
+  span.range__progress(:style="{ 'width': progress }")

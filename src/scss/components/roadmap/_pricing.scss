@@ -1,8 +1,10 @@
 .pricing {
-  box-shadow: var(--shadow);
-  margin-top: 125px;
-  padding: 63px 30px;
-  color: #4D6280;
+  &__box {
+    box-shadow: var(--shadow);
+    margin-top: 125px;
+    padding: 63px 30px;
+    color: #4D6280;
+  }
 
   &__top {
     display: flex;
@@ -44,5 +46,46 @@
     color: #7D93B2;
     display: block;
     width: 100%;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 840px) {
+  .pricing {
+    padding: 0;
+
+    &__box {
+      position: relative;
+      padding: 40px 20px;
+      box-shadow: none;
+      margin-top: 0;
+    }
+
+    &__top {
+      span {
+        font-size: 22px;
+        line-height: 25px;
+      }
+
+      &::before {
+        height: 42px;
+      }
+    }
+
+    &__link {
+      font-size: 8px;
+    }
+
+    &__badge {
+      width: 32px;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .pricing {
+    &__box {
+      min-height: 686px;
+    }
   }
 }
