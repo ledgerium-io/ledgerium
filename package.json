@@ -1,6 +1,6 @@
 {
   "name": "ledgerium",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaptn3/ledgerium.git"
+    "url": "git+https://github.com/ledgerium-io/ledgerium.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kaptn3/ledgerium/issues"
+    "url": "https://github.com/ledgerium-io/ledgerium/issues"
   },
-  "homepage": "https://github.com/kaptn3/ledgerium#readme",
+  "homepage": "https://github.com/ledgerium-io/ledgerium#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

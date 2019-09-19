@@ -22,7 +22,10 @@
         'components/team/people',
         'components/team/team-players';
 
-@import 'components/roadmap/the-way';
+@import 'components/roadmap/the-way',
+        'components/roadmap/pricing',
+        'components/roadmap/plans',
+        'components/roadmap/range';
 
 @import 'components/xgl/tabs',
         'components/xgl/xgl-top',

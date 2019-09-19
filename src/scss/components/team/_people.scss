@@ -120,6 +120,10 @@
       line-height: 19px;
     }
   }
+
+  &__show {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -130,6 +134,24 @@
 
     &__item {
       margin-bottom: 40px;
+      display: none;
+
+      &:nth-child(-n+3) {
+        display: block;
+      }
+
+      &_show {
+        display: block;
+      }
+    }
+
+    &__show {
+      display: block;
+      margin: 0 auto;
+      height: 5px;
+      width: 23px;
+      background: url(../img/icons/show-more.svg) no-repeat center;
+      background-size: contain;
     }
   }
 }

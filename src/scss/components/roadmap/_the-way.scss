@@ -148,14 +148,24 @@
   }
 }
 
+@media (max-width: 840px) {
+  .the-way {
+    background-color: #FAFCFF;
+    margin-top: 0;
+    padding-top: 54px;
+
+    &__title {
+      margin-bottom: 36px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .the-way {
     margin-bottom: 148px;
-    margin-top: 90px;
 
     &__title {
       font-size: 18px;
-      margin-bottom: 0;
     }
 
     &__box {

@@ -10,5 +10,9 @@
 @media (max-width: 767px) {
   .team-players {
     margin: 45px 0;
+    
+    .people__item {
+      min-height: auto;
+    }
   }
 }
