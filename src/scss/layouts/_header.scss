@@ -23,6 +23,12 @@
       & .header__logo span {
         display: none;
       }
+      & .header__logo-img_light {
+        display: none;
+      }
+      & .header__logo-img_dark {
+        display: block;
+      }
     }
   }
 
@@ -44,13 +50,6 @@
 
   &__logo-img {
     margin-right: 10px;
-    // background: black;
-    mask-size: cover;
-    mask: url(../img/logotype.svg);
-    &:focus,
-    &:hover {
-      background: red; //var(--bg);
-    }
   }
 
   &__logo-img_dark {
