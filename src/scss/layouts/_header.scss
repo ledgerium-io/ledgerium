@@ -4,11 +4,11 @@
   padding-top: 56px;
   left: 0;
   width: 100%;
-  transition: .2s height, .3s padding-top, .2s box-shadow;
+  transition: 0.2s height, 0.3s padding-top, 0.2s box-shadow;
   z-index: 1000;
 
   &_scroll {
-    background-color: #FAFCFF;
+    background-color: #fafcff;
     box-shadow: var(--shadow);
     color: var(--dark);
     padding-top: 0;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     &_scroll {
       & .header__logo span {
         display: none;
@@ -44,6 +44,13 @@
 
   &__logo-img {
     margin-right: 10px;
+    // background: black;
+    mask-size: cover;
+    mask: url(../img/logotype.svg);
+    &:focus,
+    &:hover {
+      background: red; //var(--bg);
+    }
   }
 
   &__logo-img_dark {
@@ -83,8 +90,8 @@
     }
 
     &_show {
-      background-color: #FAFCFF;
-      color: #4C6280;
+      background-color: #fafcff;
+      color: #4c6280;
 
       .header__logo {
         span {
@@ -116,7 +123,7 @@
       display: block;
 
       &_close {
-        background-image: url('../img/icons/close.svg');
+        background-image: url("../img/icons/close.svg");
       }
     }
 
