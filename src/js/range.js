@@ -47,15 +47,15 @@ var range = new Vue({
   computed: {
     progress() {
       if (document.body.clientWidth <= 840) {
-        switch(this.current) {
+        switch (this.current) {
           case '1':
             return '10%';
           case '2':
-            return '25%'; 
+            return '25%';
           case '3':
-            return '52%'; 
+            return '52%';
           case '4':
-            return '67%'; 
+            return '67%';
         }
       }
 
