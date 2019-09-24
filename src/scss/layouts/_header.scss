@@ -12,6 +12,9 @@
     box-shadow: var(--shadow);
     color: var(--dark);
     padding-top: 0;
+    .header__item {
+      color: var(--gray);
+    }
   }
 
   &__box {
@@ -54,6 +57,9 @@
 
   &__logo-img_dark {
     display: none;
+  }
+  &__logo-text {
+    color: var(--dark);
   }
 
   &__burger {

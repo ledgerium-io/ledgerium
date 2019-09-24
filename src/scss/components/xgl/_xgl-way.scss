@@ -59,6 +59,17 @@
     &__img {
       width: 50%;
 
+      .chart-image {
+        position: relative;
+        left: 0;
+        top: 77px;
+      }
+      .validator-image {
+        position: relative;
+        left: 0;
+        top: 70px;
+      }
+
       &_right {
         padding-left: 80px;
         margin-right: auto;
@@ -73,7 +84,7 @@
     &__mobile-title {
       display: none;
     }
-    
+
     &__article {
       width: 50%;
 
@@ -105,7 +116,7 @@
         padding-right: 174px;
       }
     }
-    
+
     &__article {
       &_right {
         padding-left: 174px;
@@ -129,9 +140,9 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
-        border: .5px solid #CEDDF2;
+        border: 0.5px solid #ceddf2;
         top: 50%;
         left: -60px;
         width: 100vw;
@@ -156,7 +167,7 @@
 
     &__item {
       display: block;
-      width:  100vw;
+      width: 100vw;
       flex-shrink: 0;
       padding: 120px 60px 0;
     }
@@ -168,7 +179,7 @@
     &__btns {
       display: block;
       margin-top: 20px;
-  
+
       button:first-child {
         margin-right: 0;
         margin-bottom: 20px;
