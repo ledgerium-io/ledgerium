@@ -9,6 +9,9 @@
 
   &_scroll {
     background-color: #fafcff;
+    &_home {
+      background-color: #152756;
+    }
     box-shadow: var(--shadow);
     color: var(--dark);
     padding-top: 0;
