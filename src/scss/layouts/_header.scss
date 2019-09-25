@@ -2,6 +2,9 @@
   position: fixed;
   top: 0;
   padding-top: 56px;
+  @media (min-width: 991px) {
+    padding-top: 16px;
+  }
   left: 0;
   width: 100%;
   transition: 0.2s height, 0.3s padding-top, 0.2s box-shadow;
