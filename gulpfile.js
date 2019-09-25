@@ -1,13 +1,13 @@
 const { src, dest, series, watch } = require('gulp');
 
-const del = require('del'), 
-      sass = require('gulp-sass'),
-      postcss = require('gulp-postcss'),
-      autoprefixer = require('autoprefixer'),
-      cssnano = require('cssnano'),
-      sourcemaps = require('gulp-sourcemaps'),
-      babel = require('gulp-babel'),
-      pug = require('gulp-pug');
+const del = require('del'),
+  sass = require('gulp-sass'),
+  postcss = require('gulp-postcss'),
+  autoprefixer = require('autoprefixer'),
+  cssnano = require('cssnano'),
+  sourcemaps = require('gulp-sourcemaps'),
+  babel = require('gulp-babel'),
+  pug = require('gulp-pug');
 
 const paths = {
   dist: 'dist',
@@ -45,21 +45,21 @@ function css() {
 
 function javascript() {
   return src(paths.js.src)
-  .pipe(babel())
-  .pipe(dest(paths.js.dest));
+    .pipe(babel())
+    .pipe(dest(paths.js.dest));
 }
 
 function img() {
   return src(paths.img.src)
-  .pipe(dest(paths.img.dest));
+    .pipe(dest(paths.img.dest));
 }
 
 function html() {
   return src(paths.pug.src)
-  .pipe(pug({
-    pretty: true
-  }))
-  .pipe(dest(paths.pug.dest));
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(dest(paths.pug.dest));
 }
 
 function watcher() {
