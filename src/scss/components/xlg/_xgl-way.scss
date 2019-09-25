@@ -1,4 +1,4 @@
-.xgl-way {
+.xlg-way {
   margin-top: 400px;
 
   &__title {
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: 768px) {
-  .xgl-way {
+  .xlg-way {
     &__img {
       width: 50%;
 
@@ -104,7 +104,7 @@
         order: -1;
         text-align: right;
 
-        .xgl-way__title {
+        .xlg-way__title {
           justify-content: flex-end;
         }
       }
@@ -113,7 +113,7 @@
 }
 
 @media (min-width: 1199px) {
-  .xgl-way {
+  .xlg-way {
     &__img {
       &_right {
         padding-left: 174px;
@@ -137,7 +137,7 @@
 }
 
 @media (max-width: 767px) {
-  .xgl-way {
+  .xlg-way {
     padding: 0;
     margin-top: 0;
 

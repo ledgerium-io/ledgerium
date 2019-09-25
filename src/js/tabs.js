@@ -1,5 +1,5 @@
 {
-  const links = document.querySelectorAll('.xgl-top a');
+  const links = document.querySelectorAll('.xlg-top a');
 
   const classHandle = (link) => {
     for (let k = 0; k < links.length; k++) {
