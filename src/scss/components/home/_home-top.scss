@@ -5,7 +5,7 @@
 
   &__title {
     margin: 46px auto 40px auto;
-    color: #ceddf2;
+    color: #fff;
   }
 
   &__img {
@@ -16,6 +16,10 @@
 
   &__become-btn {
     margin-right: 46px;
+    padding: 14px 32px;
+  }
+  &__join-btn {
+    padding: 14px 32px;
   }
 }
 
