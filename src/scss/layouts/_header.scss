@@ -4,7 +4,7 @@
   padding-top: 56px;
   background-color: var(--bg);
   color: #fff;
-  @media (min-width: 991px) {
+  @media (max-width: 991px) {
     padding-top: 0px;
   }
   left: 0;
@@ -18,7 +18,7 @@
   }
 
   &_scroll {
-    background-color: var(--bg);
+    background-color: #152756;
     // &_home {
     //   background-color: #152756;
     // }
@@ -73,7 +73,7 @@
 
   &__logo-img {
     margin-right: 10px;
-    margin-top: 28px;
+    // margin-top: 28px;
   }
 
   &__logo-img_dark {
@@ -112,7 +112,7 @@
     padding-top: 26px;
 
     &_height-full {
-      height: 322px;
+      height: 100vh;
     }
 
     &_show {
@@ -155,14 +155,14 @@
 
     &__item {
       padding-top: 0;
-      padding-bottom: 16px;
+      padding-bottom: 36px;
     }
   }
 }
 
 @media (max-width: 991px) {
   .header {
-    height: 58px;
+    // height: 98px;
 
     &_xlg {
       overflow: initial;
@@ -178,11 +178,26 @@
 
     &__logo {
       font-size: 16px;
+      margin: 0 auto;
+      position: relative;
+      left: 0;
+      top: 20px;
     }
 
     &__logo-img {
-      width: 57px;
-      height: 28px;
+      width: 136px;
+      height: 37px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 88px;
+    overflow: hidden;
+    padding-top: 0;
+    &_height-full {
+      height: 100vh;
     }
   }
 }
