@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   top: 0;
-  padding-top: 56px;
+  // padding-top: 56px;
   background-color: var(--bg);
   color: #fff;
   @media (max-width: 991px) {
@@ -73,6 +73,7 @@
 
   &__logo-img {
     margin-right: 10px;
+    // vertical-align: text-top;
     // margin-top: 28px;
   }
 
@@ -113,6 +114,7 @@
 
     &_height-full {
       height: 100vh;
+      z-index: 999;
     }
 
     &_show {
@@ -139,6 +141,10 @@
       width: 100%;
       display: none;
       text-align: center;
+
+      position: relative;
+      left: 0;
+      top: -40px;
 
       &_show {
         display: block;
