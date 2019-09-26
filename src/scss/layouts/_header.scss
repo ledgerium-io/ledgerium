@@ -55,6 +55,9 @@
 
   &__logo {
     font-size: 24px;
+    & span {
+      color: #fff;
+    }
     &:hover,
     &:focus {
       color: #fff;
