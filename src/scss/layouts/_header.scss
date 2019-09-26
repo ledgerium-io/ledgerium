@@ -2,6 +2,8 @@
   position: fixed;
   top: 0;
   padding-top: 56px;
+  background-color: var(--bg);
+  color: #fff;
   @media (min-width: 991px) {
     padding-top: 0px;
   }
@@ -10,17 +12,22 @@
   transition: 0.2s height, 0.3s padding-top, 0.2s box-shadow;
   z-index: 1000;
 
+  &--blue {
+    background-color: var(--bg);
+    color: #fff;
+  }
+
   &_scroll {
-    background-color: #fafcff;
-    &_home {
-      background-color: #152756;
-    }
-    box-shadow: var(--shadow);
-    color: var(--dark);
-    padding-top: 0;
-    .header__item {
-      color: var(--gray);
-    }
+    background-color: var(--bg);
+    // &_home {
+    //   background-color: #152756;
+    // }
+    // box-shadow: var(--shadow);
+    // color: var(--dark);
+    // padding-top: 0;
+    // .header__item {
+    //   color: var(--gray);
+    // }
   }
 
   &__box {
@@ -66,6 +73,7 @@
 
   &__logo-img {
     margin-right: 10px;
+    margin-top: 28px;
   }
 
   &__logo-img_dark {
