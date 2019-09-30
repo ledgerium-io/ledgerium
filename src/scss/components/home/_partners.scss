@@ -5,10 +5,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   &__item {
     display: block;
-    
+    pointer-events: none;
+    cursor: default;
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -28,7 +29,7 @@
       img {
         max-width: 136px;
       }
-      
+
       &:not(:last-child) {
         margin-right: auto;
       }
