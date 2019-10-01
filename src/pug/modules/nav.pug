@@ -14,3 +14,11 @@ nav.header__nav(:class="{ 'header__nav_show': isShowMenu }")
       a.header__item(href='https://medium.com/ledgerium-io' target='_blank') Blog
     li
       a.header__item(href='https://www.theblockledger.net' target='_blank') Block Ledger
+
+script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-141695607-4')
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141695607-4');
