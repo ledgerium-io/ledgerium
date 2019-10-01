@@ -19,9 +19,9 @@
 
   &_scroll {
     background-color: #152756;
-    // &_home {
-    //   background-color: #152756;
-    // }
+    &_home {
+      background-color: #152756;
+    }
     // box-shadow: var(--shadow);
     // color: var(--dark);
     // padding-top: 0;
@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 14px 0;
     &_scroll {
       & .header__logo span {
         display: none;
@@ -52,7 +52,7 @@
     list-style: none;
     padding: 0;
     display: flex;
-    margin-right: 75px;
+    // margin-right: 75px;
   }
 
   &__item {
@@ -63,11 +63,23 @@
   &__logo {
     font-size: 24px;
 
-    // @media (min-width: 1199px) {
-    //   position: relative;
-    //   top: 14px;
-    //   left: 0;
-    // }
+    &_home {
+      @media (min-width: 1199px) {
+        position: relative;
+        top: 8px;
+        left: 0;
+      }
+      // width: 166px;
+      @media (max-width: 991px) {
+        width: 166px;
+      }
+    }
+    &_not_home {
+      @media (max-width: 991px) {
+        display: none !important;
+        visibility: hidden;
+      }
+    }
 
     & span {
       color: #fff;
@@ -117,7 +129,7 @@
   .header {
     height: 76px;
     overflow: hidden;
-    padding-top: 26px;
+    // padding-top: 26px;
 
     &_height-full {
       height: 100vh;
@@ -198,10 +210,10 @@
       top: 20px;
     }
 
-    &__logo-img {
-      width: 136px;
-      height: 37px;
-    }
+    // &__logo-img {
+    //   // width: 166px;
+    //   // height: 37px;
+    // }
   }
 }
 
