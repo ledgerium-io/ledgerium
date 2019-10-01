@@ -76,8 +76,9 @@
     }
     &_not_home {
       @media (max-width: 991px) {
-        display: none !important;
-        visibility: hidden;
+        // display: none !important;
+        // visibility: hidden;
+        width: 64px;
       }
     }
 
@@ -204,10 +205,6 @@
 
     &__logo {
       font-size: 16px;
-      margin: 0 auto;
-      position: relative;
-      left: 0;
-      top: 20px;
     }
 
     // &__logo-img {
