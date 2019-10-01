@@ -1,7 +1,7 @@
 .the-way {
   margin-top: 182px;
   margin-bottom: 260px;
-  color: #4C6280;
+  color: #4c6280;
 
   &__title {
     text-align: center;
@@ -76,14 +76,14 @@
       flex-wrap: wrap;
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 0;
         left: calc(50% - 4px);
         width: 8px;
         height: 100%;
-        background-color: #CEDDF2;
+        background-color: #ceddf2;
         border-radius: 8px;
       }
     }
@@ -93,7 +93,7 @@
       flex-shrink: 0;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 35px;
         height: 35px;
@@ -101,13 +101,13 @@
         border: 8px solid #fff;
         top: 72.5px;
         border-radius: 100%;
-        box-shadow: 0 8px 15px rgba(125, 147, 178, .25);;
+        box-shadow: 0 8px 15px rgba(125, 147, 178, 0.25);
       }
-  
+
       &_right {
         padding-left: 130px;
       }
-  
+
       &_left {
         text-align: right;
         padding-right: 130px;
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 1406px) {
+@media (max-width: 1706px) {
   .the-way {
     br {
       display: none;
@@ -150,7 +150,7 @@
 
 @media (max-width: 840px) {
   .the-way {
-    background-color: #FAFCFF;
+    background-color: #fafcff;
     margin-top: 0;
     padding-top: 54px;
 
@@ -198,7 +198,7 @@
     &__number {
       display: block;
       font-size: 50px;
-      color: #E8EEF5;
+      color: #e8eef5;
       line-height: 72px;
     }
   }
