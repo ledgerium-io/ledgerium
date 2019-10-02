@@ -1,13 +1,16 @@
 .tabs {
   overflow-x: auto;
   transform: translateY(2px);
-  // width: 100%;
+  width: 80%;
   &__list {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     font-size: 20px;
     color: #b1bed0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   &__item {
@@ -16,7 +19,7 @@
     display: block;
     text-align: center;
     border-bottom: 3px solid transparent;
-    width: 232px;
+    // width: 232px;
 
     &_active {
       color: var(--green);
@@ -32,7 +35,7 @@
 @media (max-width: 1462px) {
   .tabs {
     &__item {
-      width: 200px;
+      // width: 200px;
     }
   }
 }
@@ -44,7 +47,7 @@
     }
 
     &__item {
-      width: 95px;
+      // width: 95px;
       padding: 0 5px;
     }
   }
