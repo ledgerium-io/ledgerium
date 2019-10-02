@@ -1,3 +1,5 @@
+$padding-line-space: 174px;
+// $padding-image-line-space: 146px;
 .xlg-way {
   margin-top: 400px;
 
@@ -38,6 +40,23 @@
 
   &__article {
     margin-top: 70px;
+
+    &__inner {
+      background: #ffffff;
+      box-shadow: 0px 7.13318px 40px rgba(190, 208, 233, 0.3);
+      border-radius: 13px;
+      padding: 70px 4rem;
+      // min-width: 600px;
+    }
+  }
+
+  &__img {
+    & .box-img {
+      margin-top: 160px;
+      background: url(image.png);
+      box-shadow: 0px 7.44722px 40px rgba(125, 147, 178, 0.3);
+      border-radius: 8.5px;
+    }
   }
 
   &__btns {
@@ -116,21 +135,21 @@
   .xlg-way {
     &__img {
       &_right {
-        padding-left: 174px;
+        padding-left: $padding-line-space;
       }
 
       &_left {
-        padding-right: 174px;
+        padding-right: $padding-line-space;
       }
     }
 
     &__article {
       &_right {
-        padding-left: 174px;
+        padding-left: $padding-line-space;
       }
 
       &_left {
-        padding-right: 174px;
+        padding-right: $padding-line-space;
       }
     }
   }
