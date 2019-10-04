@@ -39,20 +39,20 @@ $padding-line-space: 174px;
   }
 
   &__article {
-    margin-top: 70px;
+    // margin-top: 70px;
 
     &__inner {
       background: #ffffff;
       box-shadow: 0px 7.13318px 40px rgba(190, 208, 233, 0.3);
       border-radius: 13px;
-      padding: 70px 4rem;
+      padding: 70px 4rem 97px 4rem;
       // min-width: 600px;
     }
   }
 
   &__img {
     & .box-img {
-      margin-top: 160px;
+      // margin-top: 160px;
       background: url(image.png);
       box-shadow: 0px 7.44722px 40px rgba(125, 147, 178, 0.3);
       border-radius: 8.5px;
