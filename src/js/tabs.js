@@ -10,7 +10,7 @@
 
   const currentLinkHandle = (box) => {
       for (let i = 0; (i < links.length - 1); i++) {
-        let nextDivOffset = document.querySelector('.the-way__box').clientHeight;
+        let nextDivOffset = box.clientHeight;
         if (box) {
           nextDivOffset = box.scrollWidth;
         }
@@ -51,26 +51,14 @@
     });
   }
 
-  const box = document.querySelector('.the-way__box');
-  const width = document.body.clientWidth;
-
-  window.addEventListener('scroll', () => {
-    if (width > 767) {
-      currentLinkHandle();
-    }
-  });
+  const box = document.querySelector('.xlg-way__box');
 
   box.addEventListener('scroll', () => {
-    if (width < 768) {
-      currentLinkHandle(box);
-    }
+    currentLinkHandle(box);
+    console.log(box.scrollLeft);
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-    if (width > 767) {
-      currentLinkHandle();
-    } else {
-      currentLinkHandle(box);
-    }
+    currentLinkHandle(box);
   });
 }

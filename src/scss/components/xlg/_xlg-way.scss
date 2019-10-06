@@ -1,62 +1,38 @@
-$padding-line-space: 174px;
-// $padding-image-line-space: 146px;
 .xlg-way {
   margin-top: 400px;
+  overflow-y: hidden;
 
-  &__title {
+  &__box {
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-
-    h3 {
-      font-size: 24px;
-    }
-  }
-
-  &__title-icon {
-    box-shadow: var(--shadow);
-    border-radius: 100%;
-    margin: 0 32px;
+    overflow-x: auto;
+    transform: translateY(20px);
+    padding-bottom: 40px;
   }
 
   &__item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 130px;
+    display: block;
+    width: 100vw;
+    flex-shrink: 0;
+    padding: 120px 60px 0;
+    text-align: center;
 
     &::before {
       top: 226px;
       left: 50%;
       transform: translateX(-50%);
     }
-
-    &_img {
-      &::before {
-        display: none;
-      }
-    }
   }
 
   &__article {
-    // margin-top: 70px;
-
-    &__inner {
-      background: #ffffff;
-      box-shadow: 0px 7.13318px 40px rgba(190, 208, 233, 0.3);
-      border-radius: 13px;
-      padding: 70px 4rem 97px 4rem;
-      // min-width: 600px;
-    }
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
   }
 
   &__img {
-    & .box-img {
-      // margin-top: 160px;
-      background: url(image.png);
-      box-shadow: 0px 7.44722px 40px rgba(125, 147, 178, 0.3);
-      border-radius: 8.5px;
-    }
+    width: 70%;
+    display: block;
+    margin: 0 auto;
   }
 
   &__btns {
@@ -71,137 +47,29 @@ $padding-line-space: 174px;
       margin-right: 46px;
     }
   }
-}
 
-@media (min-width: 768px) {
-  .xlg-way {
-    &__img {
-      width: 50%;
+  &__title-icon {
+    width: 58px;
+    box-shadow: var(--shadow);
+    border-radius: 100%;
+    margin: 0 32px;
+    position: relative;
 
-      .chart-image {
-        position: relative;
-        left: 0;
-        top: -53px;
-      }
-      .validator-image {
-        position: relative;
-        left: 0;
-        top: 70px;
-      }
-
-      &_right {
-        padding-left: 80px;
-        margin-right: auto;
-      }
-
-      &_left {
-        padding-right: 80px;
-        margin-left: auto;
-      }
-      // & img {
-      //   box-shadow: 0px 7px 40px rgba(125, 147, 178, 0.3);
-      // }
-
-      // & .no_box {
-      //   box-shadow: none;
-      // }
-    }
-
-    &__mobile-title {
-      display: none;
-    }
-
-    &__article {
-      width: 50%;
-
-      &_right {
-        padding-left: 80px;
-      }
-
-      &_left {
-        padding-right: 80px;
-        order: -1;
-        text-align: right;
-
-        .xlg-way__title {
-          justify-content: flex-end;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1199px) {
-  .xlg-way {
-    &__img {
-      &_right {
-        padding-left: $padding-line-space;
-      }
-
-      &_left {
-        padding-right: $padding-line-space;
-      }
-    }
-
-    &__article {
-      &_right {
-        padding-left: $padding-line-space;
-      }
-
-      &_left {
-        padding-right: $padding-line-space;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      border: 0.5px solid #ceddf2;
+      top: 50%;
+      left: -60px;
+      width: 100vw;
+      height: 1px;
+      z-index: -2;
     }
   }
 }
 
 @media (max-width: 767px) {
   .xlg-way {
-    padding: 0;
-    margin-top: 0;
-
-    &__title {
-      justify-content: center;
-      margin-bottom: 16px;
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        border: 0.5px solid #ceddf2;
-        top: 50%;
-        left: -60px;
-        width: 100vw;
-        height: 1px;
-        z-index: -2;
-      }
-
-      h3 {
-        display: none;
-      }
-    }
-
-    &__title-icon {
-      width: 58px;
-    }
-
-    &__box {
-      display: flex;
-      overflow-x: auto;
-      padding: 0;
-    }
-
-    &__item {
-      display: block;
-      width: 100vw;
-      flex-shrink: 0;
-      padding: 120px 60px 0;
-    }
-
-    &__article {
-      margin-top: 0;
-    }
-
     &__btns {
       display: block;
       margin-top: 20px;
