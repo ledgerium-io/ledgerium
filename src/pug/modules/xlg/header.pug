@@ -1,5 +1,5 @@
-header.header(:class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight, 'header_scroll': isScroll }").header--blue
-  .container.header__box(:class="{ 'header__box_scroll': isScroll }")
+header.header.header_xlg(:class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight, 'header_scroll': isScroll }").header--blue
+  .container.header__box.header__box_xlg(:class="{ 'header__box_scroll': isScroll }")
     a.header__logo(href='/')
       img.header__logo-img.header__logo-img_light(src='img/logo-white.svg' alt='Ledgerium logotype', :style="{ 'display: none': isScroll }")
       img.header__logo-img.header__logo-img_dark(src='img/logo-white.svg' alt='Ledgerium logotype', :style="{ 'display: none': !isScroll }")

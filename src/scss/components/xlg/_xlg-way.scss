@@ -1,5 +1,5 @@
 .xlg-way {
-  margin-top: 400px;
+  margin-top: 300px;
   overflow-x: hidden;
 
   &__box {
@@ -14,7 +14,7 @@
     display: block;
     width: 100vw;
     flex-shrink: 0;
-    padding: 120px 60px 0;
+    padding: 0 60px;
     text-align: center;
 
     &::before {
