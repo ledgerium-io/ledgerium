@@ -1,12 +1,13 @@
 .xlg-way {
   margin-top: 400px;
-  overflow-y: hidden;
+  overflow-x: hidden;
 
   &__box {
     display: flex;
-    overflow-x: auto;
-    transform: translateY(20px);
     padding-bottom: 40px;
+    width: calc(100vw * 5);
+    transform: translateX(0);
+    transition: .3s transform;
   }
 
   &__item {
@@ -37,11 +38,8 @@
 
   &__btns {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
-
-    &_left {
-      justify-content: flex-end;
-    }
 
     button:first-child {
       margin-right: 46px;
