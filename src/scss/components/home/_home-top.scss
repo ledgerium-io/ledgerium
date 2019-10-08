@@ -2,16 +2,27 @@
   background-color: transparent;
   padding-bottom: 120px;
   border-bottom: none;
+  display: flex;
+  text-align: left;
 
   &__title {
     margin: 46px auto 40px auto;
     color: #fff;
+    padding: 0;
   }
 
   &__img {
     display: block;
     margin: 0 auto;
-    margin-top: 146px;
+  }
+
+  &__text {
+    padding: 0;
+  }
+
+  &__link {
+    margin-top: 2rem;
+    display: block;
   }
 
   &__become-btn {
