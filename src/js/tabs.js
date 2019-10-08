@@ -9,15 +9,21 @@
     link.classList.add('tabs__item_active');
   }
 
+  const moveTab = (i) => {
+    const width = document.documentElement.clientWidth;
+    box.style.transform = `translateX(${-i * width}px)`;
+    classHandle(links[i]);
+  }
+
   for (let i = 0; i < (links.length - 1); i++) {
     links[i].addEventListener('click', (e) => {
       e.preventDefault();
-      const width = document.documentElement.clientWidth;
-      box.style.transform = `translateX(${-i * width}px)`;
-      classHandle(links[i]);
+
+      moveTab(i);
     });
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    classHandle(links[0]);
   });
 }

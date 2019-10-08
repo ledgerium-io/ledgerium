@@ -50,7 +50,7 @@
     width: 58px;
     box-shadow: var(--shadow);
     border-radius: 100%;
-    margin: 0 32px;
+    margin: 0 auto;
     position: relative;
 
     &::before {
@@ -58,7 +58,8 @@
       position: absolute;
       border: 0.5px solid #ceddf2;
       top: 50%;
-      left: -60px;
+      left: 14px;
+      transform: translateX(-50%);
       width: 100vw;
       height: 1px;
       z-index: -2;
