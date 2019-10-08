@@ -10,7 +10,7 @@
   }
 
   const moveTab = (i) => {
-    const width = document.documentElement.clientWidth;
+    const width = document.querySelector('.xlg-way__item').clientWidth;
     box.style.transform = `translateX(${-i * width}px)`;
     classHandle(links[i]);
   }
@@ -23,7 +23,19 @@
     });
   }
 
+  const init = () => {
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].classList.contains('tabs__item_active')) {
+        moveTab(i);
+      }
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     classHandle(links[0]);
+  });
+
+  window.addEventListener('resize', () => {
+    init();
   });
 }

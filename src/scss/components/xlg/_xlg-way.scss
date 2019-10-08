@@ -1,10 +1,10 @@
 .xlg-way {
   margin-top: 300px;
   overflow-x: hidden;
+  margin-bottom: 100px;
 
   &__box {
     display: flex;
-    padding-bottom: 40px;
     width: calc(100vw * 5);
     transform: translateX(0);
     transition: .3s transform;
@@ -14,7 +14,7 @@
     display: block;
     width: 100vw;
     flex-shrink: 0;
-    padding: 0 60px;
+    position: relative;
     text-align: center;
 
     &::before {
@@ -27,6 +27,7 @@
   &__article {
     width: 100%;
     max-width: 740px;
+    padding: 0 30px;
     margin: 0 auto;
   }
 
@@ -50,32 +51,31 @@
     width: 90px;
     box-shadow: var(--shadow);
     border-radius: 100%;
-    margin: 0 auto;
-    position: relative;
+    margin: 3rem auto;
 
     &::before {
       content: "";
       position: absolute;
       border: 0.5px solid #ceddf2;
-      top: 50%;
-      left: 14px;
-      transform: translateX(-50%);
+      left: 0;
       width: 100vw;
       height: 1px;
       z-index: -2;
+      margin-top: 45px;
     }
   }
 
   &__title {
     font-weight: 600;
     font-size: 22px;
-    margin-top: 3rem;
     margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 767px) {
   .xlg-way {
+    font-size: 14px;
+
     &__btns {
       display: block;
       margin-top: 20px;
@@ -83,6 +83,15 @@
       button:first-child {
         margin-right: 0;
         margin-bottom: 20px;
+      }
+    }
+
+    &__title-icon {
+      width: 58px;
+      margin: 2rem auto;
+
+      &::before {
+        margin-top: 29px;
       }
     }
   }
