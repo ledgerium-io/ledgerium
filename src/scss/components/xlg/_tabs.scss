@@ -32,23 +32,17 @@
   }
 }
 
-@media (max-width: 1462px) {
-  .tabs {
-    &__item {
-      // width: 200px;
-    }
-  }
-}
-
 @media (max-width: 991px) {
   .tabs {
+    width: 100%;
+    padding: 0 30px;
+
     &__list {
       font-size: 14px;
     }
 
     &__item {
-      // width: 95px;
-      padding: 0 5px;
+      padding: 0 15px;
     }
   }
 }
