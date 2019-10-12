@@ -4,23 +4,23 @@ var range = new Vue({
     current: '0',
     prices: [
       {
-        period: 'Q1 & Q2 2019',
+        period: 'Q4 2019',
         title: 'Testnet'
       },
       {
-        period: 'Q3 2019',
+        period: 'Q2 2020',
         title: 'Mainnet'
       },
       {
-        period: 'Q1 2020',
+        period: 'Q3 2020',
         title: 'Services'
       },
       {
-        period: 'Q2 2020',
+        period: 'Q4 2020',
         title: 'Cross Chain Tx'
       },
       {
-        period: 'Q4 2020',
+        period: 'Q1 2021',
         title: 'Scaling'
       }
     ]
