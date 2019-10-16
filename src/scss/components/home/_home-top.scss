@@ -5,13 +5,29 @@
   display: flex;
   text-align: left;
 
-  & .hero-image-top {
-    animation: topmove 8s ease-in-out infinite both;
+  & .sq-1 {
+    animation: sq1-move 12s ease-in-out infinite both;
+  }
+
+  & .sq-2 {
+    animation: sq2-move 12s ease-in-out infinite both;
   }
 
   @keyframes topmove {
     55% {
       transform: translateY(42px);
+    }
+  }
+
+  @keyframes sq1-move {
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes sq2-move {
+    50% {
+      transform: translateY(78px);
     }
   }
 
