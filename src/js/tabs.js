@@ -30,18 +30,27 @@
       }
     }
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    classHandle(links[0]);
+  
+  const moveByHash = () => {
     const hash = window.location.hash;
     const hashes = ['#distribution', '#validators', '#buy', '#watch', '#wallets'];
     
     if (hash && hashes.indexOf(hash) !== -1) {
       moveTab(hashes.indexOf(hash));
     }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    classHandle(links[0]);
+    moveByHash();
   });
 
   window.addEventListener('resize', () => {
     init();
   });
+  
+  window.addEventListener('hashchange', () => {
+    moveByHash();
+  });
+    
 }
