@@ -21,10 +21,45 @@ var headerContainer = new Vue({
       this.isScroll = window.pageYOffset > 0;
     }
   },
+
+
   mounted() {
     window.onscroll = () => {
       this.headerHandle();
     }
     this.headerHandle();
+
+    // console.log(ScrollReveal())
+    const sr = ScrollReveal()
+    sr.reveal('.home-top__img', {
+      delay: 250,
+      duration: 600,
+      distance: '60px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'bottom',
+      interval: 150,
+      reset: true
+    });
+    sr.reveal('.home-top__paragraph', {
+      delay: 150,
+      duration: 600,
+      distance: '60px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'bottom',
+      interval: 150,
+      reset: true
+    });
+
+    sr.reveal('.home-banner', {
+      delay: 150,
+      duration: 600,
+      distance: '50px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'bottom',
+      interval: 150,
+      reset: true
+    });
+
   }
+
 })
