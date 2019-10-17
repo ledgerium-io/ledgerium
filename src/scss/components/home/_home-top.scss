@@ -84,6 +84,8 @@
 
 @media (max-width: 767px) {
   .home-top {
+    padding-bottom: 0;
+
     &__title {
       margin-bottom: 20px;
     }
@@ -99,6 +101,17 @@
 
     &__img {
       margin-top: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home-top {
+    &__img {
+      height: 500px;
     }
   }
 }
