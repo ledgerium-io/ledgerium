@@ -128,26 +128,6 @@
       height: 136px;
     }
 
-    &_height-full {
-      height: 100vh;
-      z-index: 999;
-
-      .header__box_xlg {
-        height: 100%;
-      }
-    }
-
-    &_show {
-      background-color: #fafcff;
-      color: #4c6280;
-
-      .header__logo {
-        span {
-          display: none;
-        }
-      }
-    }
-
     &__box {
       flex-wrap: wrap;
       height: 100%;
@@ -212,5 +192,29 @@
   .header {
     overflow: hidden;
     padding-top: 0;
+  }
+}
+
+@media (max-width: 1070px) {
+  .header {
+    &_height-full {
+      height: 100vh;
+      z-index: 999;
+
+      .header__box_xlg {
+        height: 100%;
+      }
+    }
+
+    &_show {
+      background-color: #fafcff;
+      color: #4c6280;
+
+      .header__logo {
+        span {
+          display: none;
+        }
+      }
+    }
   }
 }
