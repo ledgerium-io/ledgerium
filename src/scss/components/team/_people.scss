@@ -76,6 +76,14 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .people {
+    &__grid {
+      grid-gap: 100px 32px;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
   .people {
     &__grid {
