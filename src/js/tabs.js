@@ -33,6 +33,12 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     classHandle(links[0]);
+    const hash = window.location.hash;
+    const hashes = ['#distribution', '#validators', '#buy', '#watch', '#wallets'];
+    
+    if (hash && hashes.indexOf(hash) !== -1) {
+      moveTab(hashes.indexOf(hash));
+    }
   });
 
   window.addEventListener('resize', () => {
