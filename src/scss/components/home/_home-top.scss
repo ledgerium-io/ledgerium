@@ -30,6 +30,23 @@
       transform: translateY(78px);
     }
   }
+  #image0 {
+    animation: blink 6s cubic-bezier(0.2, 0.73, 0.71, 0.44) infinite both;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.4;
+    }
+  }
 
   &__title {
     margin: 46px auto 40px auto;
@@ -75,7 +92,7 @@
 @media (max-width: 991px) {
   .home-top {
     display: block;
-    
+
     &__img {
       margin-top: 70px;
     }
