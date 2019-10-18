@@ -57,6 +57,8 @@
   &__img {
     display: block;
     margin: 0 auto;
+    width: 536px;
+    flex-shrink: 0;
 
     svg {
       width: 100%;
@@ -76,15 +78,42 @@
   &__become-btn {
     margin-right: 46px;
     padding: 14px 32px;
+    white-space: nowrap;
     @media (max-width: 400px) {
       padding: 14px 24px;
       min-width: 172px;
     }
   }
+
   &__join-btn {
     padding: 14px 32px;
+    white-space: nowrap;
     @media (max-width: 400px) {
       padding: 14px 24px;
+    }
+  }
+}
+
+@media (max-width: 1328px) {
+  .home-top {
+    &__text br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-top {
+    &__img {
+      width: 430px;
+    }
+  }
+}
+
+@media (max-width: 1108px) {
+  .home-top {
+    &__img {
+      width: 380px;
     }
   }
 }
@@ -95,6 +124,7 @@
 
     &__img {
       margin-top: 70px;
+      width: 100%;
     }
   }
 }
