@@ -4,9 +4,9 @@
     p.plans__text
       | Decentralised smart
       br
-      | Governance
+      | governance
       br
-      | First 20 validators
+      | First 21 block producers
       br
       | Private tx support
       br
@@ -18,30 +18,30 @@
     p.plans__text
       | IPFS/Swarm
       br
-      | Naming & Identity
+      | Asset transfer with 
       br
-      | Fixed gas txs
+      | privacy
       br
-      | Transaction relayers
+      | Delegator based block producers 
       br
-      | Onboard 20 more Validators
+      | Onboard 21 more block producers
   .plans__item
-    h3.plans__title(:class="{ 'plans__title_unactive': current < 3, 'plans__title_active': current === '3' }") Cross Chain Tx 
-    p.plans__text
-      | 3rd party data oracles
-      br
-      | eth -> xlg transactions
-      br
-      | 3rd party services connectors
-      br
-      | Onchain e-commerce
-  .plans__item
-    h3.plans__title(:class="{ 'plans__title_unactive': current < 4, 'plans__title_active': current === '4' }") Scaling
+    h3.plans__title(:class="{ 'plans__title_unactive': current < 3, 'plans__title_active': current === '3' }") Scaling
     p.plans__text
       | Plasma & sharding
       br
-      | L2 sidechains
+      | ETH -> XLG transactions
       br
-      | Segregated contracts
+      | Onchain e-commerce
       br
-      | Cross channel Communications
+      | Side-chain micro-payments
+  .plans__item
+    h3.plans__title(:class="{ 'plans__title_unactive': current < 4, 'plans__title_active': current === '4' }") Cross Chain Tx
+    p.plans__text
+      | Cross sharding communication
+      br
+      | Compute rent fees
+      br
+      | WASM engines for smart 
+      br
+      | contracts performance
