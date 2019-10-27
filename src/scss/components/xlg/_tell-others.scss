@@ -1,0 +1,29 @@
+.tell-others {
+  background-color: #EDF4FD;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-top: 110px;
+
+  &__img-wrapper {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    padding: 0 15px;
+    flex-shrink: 0;
+    color: #4D6280;
+    font-size: 17px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

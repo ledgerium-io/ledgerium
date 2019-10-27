@@ -2,7 +2,7 @@
 
 @import "base/root", "base/reset";
 
-@import "layouts/app", "layouts/header", "layouts/footer";
+@import "layouts/app", "layouts/header", "layouts/footer", "layouts/token-sale";
 
 @import "pages/team", "pages/roadmap";
 
@@ -18,7 +18,7 @@
   "components/roadmap/plans", "components/roadmap/range";
 
 @import "components/xlg/tabs", "components/xlg/xlg-top",
-  "components/xlg/xlg-way", "components/xlg/sale-info";
+  "components/xlg/xlg-way", "components/xlg/sale-info", "components/xlg/tell-others";
 
 .t {
   color: #203060;
