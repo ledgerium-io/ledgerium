@@ -1,4 +1,12 @@
 .token-sale {
   font-family: Nunito;
   color: var(--black);
+
+  &__title {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+  }
 }

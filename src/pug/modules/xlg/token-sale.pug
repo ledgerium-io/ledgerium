@@ -47,7 +47,44 @@ mixin ico-rating(logo, value, stars)
       img.icon-rating__stars(src=stars)
 
 .ico-rating
-  h2.ico-rating__title ICO Rating
+  h2.token-sale__title.ico-rating__title ICO Rating
   +ico-rating('/img/ico-rating/ico-bench.png', '4.4', '/img/ico-rating/ico-bench-stars.svg')(class="ico-rating__item_ico-bench")
   +ico-rating('/img/ico-rating/coin-checkup.png', '4.70', '/img/ico-rating/coin-checkup-stars.svg')(class="ico-rating__item_coin-checkup")
   +ico-rating('/img/ico-rating/ico-marks.png', '10', '/img/ico-rating/ico-marks-stars.svg')(class="ico-rating__item_ico-marks")
+
+mixin qa(title)
+  .qa__item
+    .qa__header
+      h3.qa__title=title
+      button.qa__btn(type="button") +
+    article.qa__article
+      block
+
+.qa
+  h2.token-sale__title.qa__title Questions & Answers
+  p.qa__top-text A set of the most important questions and answers about XLG, Ledgerium Blockchain and the Sale. For additional questions, contact our Support center or join our Telegram channel.
+      
+  +qa('What is Ledgerium Blockchain?')
+    p 
+      b Ledgerium Blockchain 
+      | is a distributed digital ledger that can record transactions between parties efficiently in a verifiable and permanent way. This allows the participants to verify and audit transactions instantly and inexpensively. 
+    p Ledgerium Blockchain is an Ethereum/Quorum based distributed digital ledger that will record public and private transactions between parties efficiently in a verifiable and permanent way. 
+    ul Some of the features of Ledgerium Blockchain are
+      li Distributed and Decentralised 
+      li Immutable 
+      li Public and Private Transactions 
+      li High Throughput 
+      li Scalable 
+      li High Availability 
+      li Secured
+    p 
+      a(href="#") Block Ledger
+      | , a company behind Ledgerium Blockchain. It brings an e-invoicing and financial accounting reconciliation product named 
+      a(href="#") Luca+ 
+      | to the market place which leverages Ledgerium Blockchain to maintain audit trails and transparency.
+  +qa('What is XLG?')
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam aspernatur laborum. Iure odio accusamus illo? Nihil voluptatibus praesentium animi blanditiis! Debitis dicta iure eligendi nihil. Quasi, culpa quaerat? Provident.
+  +qa('What are some of the use case of XLG token?')
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque accusantium ab aliquid nisi quidem quisquam ex libero optio, dolorum, similique omnis fuga. Esse, architecto perspiciatis. Ut, corrupti et. Facere?
+  +qa('What currencies can be used to buy XLG?')
+    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo tempora aut vel, qui adipisci, optio eveniet nesciunt amet at obcaecati quos ad voluptate saepe laboriosam quis dicta rem animi veritatis.
