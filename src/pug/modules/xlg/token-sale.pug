@@ -2,14 +2,8 @@
   div
     .sale-info__table
       .sale-info__col.sale-info__col-name
-        span.sale-info__name Sale starts
-        span.sale-info__name Sale ends
-        span.sale-info__name Accepted currency
-        span.sale-info__name XLG Token price
-        span.sale-info__name XLG Token Status 
-        span.sale-info__name XLG Token Delivery
-        span.sale-info__name XLG Mainnet Launch
-        span.sale-info__name XLG Tokens for sale
+        each val in ['Sale starts', 'Sale ends', 'Accepted currency', 'XLG Token price', 'XLG Token Status', 'XLG Token Delivery', 'XLG Mainnet Launch', 'XLG Tokens for sale']
+          span.sale-info__name=val
       .sale-info__col.sale-info__col-value
         span.sale-info__value Nov 4, 2019, 9:00am UTC
         span.sale-info__value Nov 20, 2019, 6:00pm UTC
