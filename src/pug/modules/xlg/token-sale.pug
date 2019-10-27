@@ -37,3 +37,17 @@
       br 
       | amount of your referral. 
       a.tell-others__link(href="#") Learn more about the terms.
+
+mixin ico-rating(logo, value, stars)
+  .ico-rating__item(class=attributes.class)
+    .ico-rating__logo
+      img(src=logo)
+    .ico-rating__wrapper
+      .ico-rating__value=value
+      img.icon-rating__stars(src=stars)
+
+.ico-rating
+  h2.ico-rating__title ICO Rating
+  +ico-rating('/img/ico-rating/ico-bench.png', '4.4', '/img/ico-rating/ico-bench-stars.svg')(class="ico-rating__item_ico-bench")
+  +ico-rating('/img/ico-rating/coin-checkup.png', '4.70', '/img/ico-rating/coin-checkup-stars.svg')(class="ico-rating__item_coin-checkup")
+  +ico-rating('/img/ico-rating/ico-marks.png', '10', '/img/ico-rating/ico-marks-stars.svg')(class="ico-rating__item_ico-marks")
