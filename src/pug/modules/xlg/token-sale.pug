@@ -13,11 +13,11 @@
         span.sale-info__value 0.05 - 0.07 USD
         span.sale-info__value Locked.
           a.sale-info__link(href="#") Learn more
-        span.sale-info__value Immediately after XLG lisiting.
+        span.sale-info__value You will receive 25% of the XLG immediately.*
           a.sale-info__link(href="#") Learn more
         span.sale-info__value Expected March 31, 2020
         span.sale-info__value 40,000,000
-    p You will receive 25% of the XLG immediately, and balances in 3 month tiers (as per locking). 
+    p * You will receive 25% of the XLG immediately, and balances in 3 month tiers (as per locking). 
       a.sale-info__link(href="#") Learn more.
   .sale-info__img-wrapper
     img(src="/img/xlg/token-sale-1.svg", alt="")
@@ -98,10 +98,16 @@ mixin qa(title)
       li Financial Documentation
 
   +qa('What currencies can be used to buy XLG?')
-    p USD, ETH, BTC, BNB and USDT
+    p USD, AUD, ETH, BTC, BNB
+
+  +qa('What does locked XLG mean?')
+    p XLG tokens will be locked in for a certain period of time. 25% of these XLG tokens will be vested every 3 months.
+  
+  +qa('When will I receive my XLG tokens?')
+    p You will receive 25% of the XLG immediately, and balances in 3-month tiers (as per locking).
 
   +qa('When will the public sale be held?')
-    p XLG token public sale will be started from 25th Nov 2019.
+    p XLG tokens public sale will be started from 25th Nov 2019.
 
   +qa('How to contribute to the XLG token sale?')
     p First and foremost, you have to sign for our
@@ -125,9 +131,6 @@ mixin qa(title)
     p ETH wallets on exchanges should only be used for the temporary storage of cryptocurrencies. There is a major risk involved with exchange wallets and you should be aware of them. You should create an actual ETH wallet by following the instructions at
       a(href="https://www.myetherwallet.com/") https://www.myetherwallet.com/
       | . The process is really quick and easy, and should only take a few minutes. This wallet is highly secure and will keep your crypto assets safe.
-
-  +qa('When will I receive my XLG tokens?')
-    p Tokens are transferred immediately after sending the ETH amount to the unique contract address if the sender’s ETH address is in the whitelist. Otherwise, your transaction will be processed manually within 24 hours.
 
   +qa('Where can I get help?')
     p For any further questions, please don’t hesitate to contact our messenger,
