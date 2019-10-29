@@ -72,6 +72,19 @@
     font-size: 22px;
     margin-bottom: 2rem;
   }
+
+  &__screenshot {
+    background: #fff;
+    box-shadow: 0px 7.31943px 41.0444px rgba(190, 208, 233, 0.3);
+    border-radius: 18px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 767px) {
