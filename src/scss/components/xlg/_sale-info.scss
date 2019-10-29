@@ -49,6 +49,16 @@
 
   &__img-wrapper {
     margin: 0 auto;
+    padding: 0 15px;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 1480px) {
+  .sale-info {
+    &__img-wrapper {
+      max-width: 34%;
+    }
   }
 }
 

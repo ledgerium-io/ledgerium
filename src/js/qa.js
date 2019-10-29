@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         article.style.borderWidth = 0;
         article.style.marginTop = '0';
         article.style.height = 0;
-        button.innerText = '+';
+        button.classList.remove('qa__btn_is-show');
       } else {
         article.style.height = `${article.scrollHeight}px`;
         article.style.borderWidth = '1px';
         article.style.marginTop = '1.6em';
-        button.innerText = '-';
+        button.classList.add('qa__btn_is-show');
       }
     });
   }
