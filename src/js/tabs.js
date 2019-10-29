@@ -19,6 +19,7 @@
     links[i].addEventListener('click', (e) => {
       e.preventDefault();
 
+      scrollTo(0, 0);
       moveTab(i);
     });
   }
@@ -33,7 +34,7 @@
   
   const moveByHash = () => {
     const hash = window.location.hash;
-    const hashes = ['#distribution', '#validators', '#buy', '#watch', '#wallets'];
+    const hashes = ['#token-sale', '#distribution', '#validators', '#buy', '#watch', '#wallets'];
     
     if (hash && hashes.indexOf(hash) !== -1) {
       moveTab(hashes.indexOf(hash));
