@@ -6,4 +6,6 @@ header.header.header_xlg(:class="{ 'header_show': isShowMenu, 'header_height-ful
       //- span ledgerium.io
     button.header__burger(@click="toggleMenu", :class="{ 'header__burger_close': isShowMenu }")
     include ../nav.pug
+
+  include timer.pug
   include top.pug
