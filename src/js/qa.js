@@ -19,4 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  const learnMoreLinks = document.querySelectorAll('.learn-more');
+  for (let i = 0; i < learnMoreLinks.length; i++) {
+    learnMoreLinks[i].addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const hash = learnMoreLinks[i].hash;
+      const div = document.querySelector(hash);
+      const scroll = div.offsetTop + 160;
+      scrollTo(0, scroll);
+    })
+  }
 });

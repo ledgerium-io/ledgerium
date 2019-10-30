@@ -1,5 +1,5 @@
-mixin qa(title)
-  .qa__item
+mixin qa(title, id)
+  .qa__item(id=id)
     .qa__header
       h3.qa__title=title
       button.qa__btn(type="button")
@@ -54,13 +54,13 @@ mixin qa(title)
   +qa('What currencies can be used to buy XLG?')
     p USD, AUD, ETH, BTC, BNB
 
-  +qa('What does locked XLG mean?')
+  +qa('What does locked XLG mean?', 'locked')
     p XLG tokens will be locked in for a certain period of time. 25% of these XLG tokens will be vested every 3 months.
   
-  +qa('When will I receive my XLG tokens?')
+  +qa('When will I receive my XLG tokens?', 'receive')
     p You will receive 25% of the XLG immediately, and balances in 3-month tiers (as per locking).
 
-  +qa('When will the public sale be held?')
+  +qa('When will the public sale be held?', 'held')
     p XLG tokens public sale will be started from 25th Nov 2019.
 
   +qa('How to contribute to the XLG token sale?')
@@ -86,7 +86,7 @@ mixin qa(title)
       a(href="https://www.myetherwallet.com/")  https://www.myetherwallet.com/
       | . The process is really quick and easy, and should only take a few minutes. This wallet is highly secure and will keep your crypto assets safe.
 
-  +qa('Where can I get help?')
+  +qa('Where can I get help?', 'help')
     p For any further questions, please don’t hesitate to contact our messenger,
       a(href="mailto:info@ledgerium.io")  email us
       |  or
