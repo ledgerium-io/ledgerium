@@ -26,6 +26,15 @@ var headerContainer = new Vue({
   mounted() {
     window.onscroll = () => {
       this.headerHandle();
+      const tokenSale = document.querySelector('.token-sale');
+
+      if (tokenSale) {
+        if (this.isScroll) {
+          tokenSale.style.marginTop = '0';
+        } else {
+          tokenSale.style.marginTop = '500px';
+        }
+      }
     }
     this.headerHandle();
 

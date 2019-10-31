@@ -1,20 +1,32 @@
 .sale-info
   div
     .sale-info__table
-      .sale-info__col.sale-info__col-name
-        each val in ['Sale starts', 'Sale ends', 'Accepted currency', 'XLG Token price', 'XLG Token Status', 'XLG Token Delivery', 'XLG Mainnet Launch', 'XLG Tokens for sale']
-          span.sale-info__name=val
-      .sale-info__col.sale-info__col-value
+      .sale-info__row
+        span.sale-info__name Sale starts
         span.sale-info__value Nov 4, 2019, 9:00am UTC
+      .sale-info__row
+        span.sale-info__name Sale ends
         span.sale-info__value Nov 20, 2019, 6:00pm UTC
+      .sale-info__row
+        span.sale-info__name Accepted currency
         span.sale-info__value USD, AUD, BTC, ETH, BNB.&nbsp;
           a.sale-info__link.learn-more(href="#locked") Learn more
+      .sale-info__row
+        span.sale-info__name XLG Token price
         span.sale-info__value 0.05 - 0.07 USD
+      .sale-info__row
+        span.sale-info__name XLG Token Status
         span.sale-info__value Locked.&nbsp;
           a.sale-info__link.learn-more(href="#receive") Learn more
+      .sale-info__row
+        span.sale-info__name XLG Token Delivery
         span.sale-info__value You will receive 25% of the XLG immediately.&nbsp;
           a.sale-info__link.learn-more(href="#receive") Learn more
+      .sale-info__row
+        span.sale-info__name XLG Mainnet Launch
         span.sale-info__value Expected March 31, 2020
+      .sale-info__row
+        span.sale-info__name XLG Tokens for sale
         span.sale-info__value 40,000,000
   .sale-info__img-wrapper
     img(src="/img/xlg/token-sale-1.svg", alt="")
@@ -30,6 +42,37 @@ section.tell-others
       br
       | amount of your referral.&nbsp;
       a.tell-others__link.learn-more(href="#help") Learn more about the terms.
+
+section.xlg-plans
+  h2.token-sale__title.xlg-plans__title XLG Highlights
+  .xlg-plans__box
+    .xlg-plans__col
+      .xlg-plans__h3.xlg-plans__h3_first Testnet launched
+      span.xlg-plans__deadline Dec 3, 2018
+    .xlg-plans__col
+      .xlg-plans__h3 Mainnet launch
+      span.xlg-plans__deadline Expected March 31, 2020
+    .xlg-plans__progress
+  p.xlg-plans__learn-more To learn more about the Ledgerium Blockchain, please read the 
+    a(href="https://whitepaper.ledgerium.io/") Whitepaper 
+    | and research the 
+    a(href="#") documentation 
+    | .
+
+section.sale-wave
+  div.sale-wave__item
+    h3.sale-wave__title 1st SALE WAVE 
+    span.sale-wave__price 0.05 USDT
+    span.sale-wave__period 4 Nov - 11 Nov
+    span.sale-wave__add (Or Until Allocation Has Been Exhausted)
+    span.sale-wave__add (20,000,000 XLG Tokens For Sale)
+  div.sale-wave__item
+    h3.sale-wave__title 2nd SALE WAVE
+    span.sale-wave__price 0.07 USDT
+    span.sale-wave__period 12 Nov - 20 Nov 
+    span.sale-wave__add (Or Until Allocation Has Been Exhausted)
+    span.sale-wave__add (20,000,000 XLG Tokens For Sale) 
+  img.sale-wave__img(src="/img/xlg/wave.svg")
 
 //mixin ico-rating(logo, value, stars)
   .ico-rating__item(class=attributes.class)

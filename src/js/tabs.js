@@ -9,6 +9,11 @@
     link.classList.add('tabs__item_active');
   }
 
+  const heightHandle = (i) => {
+    const height = document.querySelectorAll('.xlg-way__item')[i].offsetHeight;
+    box.style.height = `${height}px`;
+  }
+
   const moveTab = (i) => {
     const width = document.querySelector('.xlg-way__item').clientWidth;
     box.style.transform = `translateX(${-i * width}px)`;
@@ -19,6 +24,7 @@
       timer.removeAttribute('style');
     }
     classHandle(links[i]);
+    heightHandle(i);
   }
 
   for (let i = 0; i < (links.length - 1); i++) {
