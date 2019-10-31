@@ -15,7 +15,7 @@
     border-radius: 13px;
     display: flex;
     position: relative;
-    padding: 100px 30px;
+    padding: 80px 30px 100px;
   }
 
   &__col {
@@ -25,8 +25,12 @@
   &__h3 {
     font-weight: 300;
     font-size: 48px;
-    margin-bottom: 130px;
-    line-height: 58px;
+    margin-bottom: 112px;
+    line-height: 96px;
+
+    &_first {
+      border-right: 2px solid #E5F0FF;
+    }
   }
 
   &__deadline {
