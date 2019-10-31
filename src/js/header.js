@@ -30,9 +30,9 @@ var headerContainer = new Vue({
 
       if (tokenSale) {
         if (this.isScroll) {
-          tokenSale.style.margin = '0';
+          tokenSale.style.marginTop = '0';
         } else {
-          tokenSale.style.margin = '500px';
+          tokenSale.style.marginTop = '500px';
         }
       }
     }
