@@ -5,6 +5,7 @@
   margin: 0 auto;
   margin-bottom: 200px;
   font-size: 16px;
+  text-align: left;
   
   &__title {
     margin-bottom: 20px;
@@ -36,6 +37,7 @@
     overflow: hidden;
     position: relative;
     padding: 36px 0;
+    margin-bottom: 10px;
 
     &::after {
       content: '';
@@ -72,30 +74,10 @@
     color: #4D6280;
   }
 
-  &__link {
-    color: var(--green);
-    text-decoration: underline;
-  }
-
-  &__img-wrapper {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 40%;
-  }
-}
-
-@media (max-width: 1480px) {
-  .sale-info {
-    &__img-wrapper {
-      max-width: 34%;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .sale-info {
-    &__col {
-      padding-left: 20px;
-    }
+  &__text {
+    color: #4D6280;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
   }
 }
