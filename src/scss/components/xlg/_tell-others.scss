@@ -2,6 +2,7 @@
   background-color: #EDF4FD;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: left;
   padding-top: 110px;
 
@@ -25,5 +26,42 @@
 
   &__link {
     text-decoration: underline;
+  }
+
+  &__telegram {
+    background-color: var(--bg);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 110px;
+    transition: .2s background-color, .2s color;
+
+    &:hover,
+    &:focus {
+      background-color: #CEDDF2;
+      color: var(--bg);
+
+      .tell-others__span {
+        &::before {
+          background-image: url(/img/icons/join-telegram-hover.svg);
+        }
+      }
+    }
+  }
+
+  &__span {
+    line-height: 92px;
+    font-size: 20px;
+
+    &::before {
+      content: '';
+      background: url(/img/icons/join-telegram.svg) no-repeat center;
+      background-size: contain;
+      width: 32px;
+      height: 26px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 30px;
+    }
   }
 }

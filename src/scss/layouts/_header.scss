@@ -121,20 +121,10 @@
 
 @media (max-width: 1070px) {
   .header {
-    height: 76px;
-    overflow: hidden;
-
-    &_xlg {
-      height: 136px;
-    }
 
     &__box {
       flex-wrap: wrap;
       height: 100%;
-
-      &_xlg {
-        height: 76px;
-      }
     }
 
     &__menu {
@@ -172,12 +162,6 @@
 
 @media (max-width: 991px) {
   .header {
-    height: 108px;
-
-    &_xlg {
-      overflow: initial;
-    }
-
     &_scroll {
       padding-top: 0;
     }
@@ -190,7 +174,6 @@
 
 @media (max-width: 767px) {
   .header {
-    overflow: hidden;
     padding-top: 0;
   }
 }
