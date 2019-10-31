@@ -1,10 +1,16 @@
 .tell-others {
   background-color: #EDF4FD;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-align: left;
+  padding-bottom: 140px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
   &__img-wrapper {
     flex-shrink: 0;
@@ -15,14 +21,24 @@
     flex-shrink: 0;
     color: #4D6280;
     font-size: 17px;
-    padding-bottom: 80px;
   }
 
   &__title {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 30px;
     color: var(--black);
-    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    &::after {
+      content: '';
+      width: 44px;
+      height: 44px;
+      background: url(/img/icons/rocket.svg) no-repeat center;
+      background-size: contain;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+    }
   }
 
   &__link {
@@ -35,6 +51,7 @@
     text-align: center;
     width: 100%;
     margin-bottom: 110px;
+    display: block;
     transition: .2s background-color, .2s color;
 
     &:hover,
@@ -63,6 +80,31 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 30px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    display: block;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    width: 175px;
+    text-align: center;
+    padding: 5px 0;
+    transition: .2s background-color, .2s color;
+    color: var(--bg);
+
+    &:hover,
+    &:focus {
+      background-color: var(--bg);
+      color: #fff;
+    }
+
+    &:first-child {
+      margin-right: 38px;
     }
   }
 }
