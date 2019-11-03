@@ -17,7 +17,8 @@
     }
   }
 
-  &_green {
+  &_green,
+  a&_green {
     background-color: var(--green);
     color: #fff;
     border-color: var(--green);
