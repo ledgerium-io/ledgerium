@@ -1,9 +1,11 @@
 .btn {
   border: 1px solid var(--text);
-  padding: 14px 0;
+  padding: 16px 0;
   width: 205px;
   border-radius: 8px;
   font-size: 1rem;
+  line-height: 1;
+  display: inline-block;
 
   &_empty {
     transition: 0.2s color, 0.2s background-color;
