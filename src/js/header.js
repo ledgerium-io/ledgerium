@@ -59,7 +59,7 @@ var headerContainer = new Vue({
       reset: true
     });
 
-    sr.reveal('.home-banner', {
+    sr.reveal('.home-banner__box', {
       delay: 150,
       duration: 600,
       distance: '50px',
