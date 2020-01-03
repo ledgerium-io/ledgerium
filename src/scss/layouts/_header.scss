@@ -97,6 +97,10 @@
     &__box {
       flex-wrap: wrap;
       height: 100%;
+
+      &_scroll {
+        padding: 8px 0;
+      }
     }
 
     &__menu {
