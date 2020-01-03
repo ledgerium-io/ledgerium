@@ -1,8 +1,6 @@
 header.header(:class="{ 'header_show': isShowMenu, 'header_height-full': isShowHeight, 'header_scroll': isScroll }")
   .container.header__box(:class="{ 'header__box_scroll': isScroll }")
     a.header__logo(href='/')
-      img.header__logo-img.header__logo-img_light(src='img/logotype.svg' alt='Ledgerium logotype', :style="{ 'display: none': isScroll }")
-      img.header__logo-img.header__logo-img_dark(src='img/logotype-dark.svg' alt='Ledgerium logotype', :style="{ 'display: none': !isScroll }")
-      span ledgerium.io
+      img.header__logo-img.header__logo-img_light.header__logo_not_home(src='img/logo-white.svg' alt='Ledgerium logotype')
     button.header__burger(@click="toggleMenu", :class="{ 'header__burger_close': isShowMenu }")
     include nav.pug

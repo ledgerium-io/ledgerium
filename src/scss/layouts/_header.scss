@@ -1,7 +1,6 @@
 .header {
   position: fixed;
   top: 0;
-  // padding-top: 56px;
   background-color: var(--bg);
   color: #fff;
   transition: .4s background-color;
@@ -13,22 +12,11 @@
   transition: 0.2s height, 0.3s padding-top, 0.2s box-shadow;
   z-index: 1000;
 
-  &--blue {
-    background-color: var(--bg);
-    color: #fff;
-  }
-
   &_scroll {
     background-color: #152756;
     &_home {
       background-color: #152756;
     }
-    // box-shadow: var(--shadow);
-    // color: var(--dark);
-    // padding-top: 0;
-    // .header__item {
-    //   color: var(--gray);
-    // }
   }
 
   &__box {
@@ -40,16 +28,6 @@
  
     &_scroll {
       padding: 0;
- 
-      & .header__logo span {
-        display: none;
-      }
-      & .header__logo-img_light {
-        display: none;
-      }
-      & .header__logo-img_dark {
-        display: block;
-      }
     }
   }
 
@@ -95,15 +73,6 @@
 
   &__logo-img {
     margin-right: 10px;
-    // vertical-align: text-top;
-    // margin-top: 28px;
-  }
-
-  &__logo-img_dark {
-    display: none;
-  }
-  &__logo-text {
-    color: var(--dark);
   }
 
   &__burger {
@@ -126,7 +95,6 @@
 
 @media (max-width: 1070px) {
   .header {
-
     &__box {
       flex-wrap: wrap;
       height: 100%;

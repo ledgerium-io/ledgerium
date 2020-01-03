@@ -2,7 +2,7 @@
 
 @import "base/root", "base/reset";
 
-@import "layouts/app", "layouts/header", "layouts/footer", "layouts/token-sale";
+@import "layouts/app", "layouts/header", "layouts/footer";
 
 @import "pages/team", "pages/roadmap";
 
@@ -16,10 +16,6 @@
 
 @import "components/roadmap/the-way", "components/roadmap/pricing",
   "components/roadmap/plans", "components/roadmap/range";
-
-@import "components/xlg/tabs", "components/xlg/xlg-top",
-  "components/xlg/xlg-way", "components/xlg/sale-info", "components/xlg/tell-others", "components/xlg/ico-rating",
-  "components/xlg/qa", "components/xlg/timer", "components/xlg/plans", "components/xlg/sale-wave";
 
 .t {
   color: #203060;
