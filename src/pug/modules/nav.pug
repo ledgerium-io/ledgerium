@@ -1,11 +1,10 @@
 nav.header__nav(:class="{ 'header__nav_show': isShowMenu }")
+  button.header__btn-close(@click="isShowMenu = false")
   ul.header__menu
     li
       a.header__item(href='https://whitepaper.ledgerium.io' target='_blank') Whitepaper
     li
       a.header__item(href='roadmap.html') Roadmap
-    li
-      a.header__item(href='https://tokensale.ledgerium.io') XLG Token
     li
       a.header__item(href='https://docs.ledgerium.io/docs') Docs
     li
